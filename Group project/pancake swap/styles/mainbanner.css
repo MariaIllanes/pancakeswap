@@ -1,0 +1,46 @@
+
+:root {
+--darkh2: #b8acd2;
+--lighth2: #7a6cab;
+
+}
+
+
+.main-banner {
+    background-color: #edf6fe;
+}
+
+.mbcontainer {
+    width: 90%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.mbimg{
+    height: 650px;
+    width: 650px;
+}
+
+.titleMB{
+    font-size: 5.5rem;
+    line-height: 110%;
+    max-width: 33rem;
+    margin: 0;
+    padding-top: 6rem;
+}
+
+.text-container h2{
+    max-width: 31rem;
+    color: var(--lighth2);
+    line-height: 110%;
+}
+
+.textcolour1 {
+    color: #290e5e;
+}
+
+.textcolour2 {
+    color: #7744d9;
+}
