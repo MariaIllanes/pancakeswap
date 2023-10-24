@@ -1,0 +1,46 @@
+.html,
+body {
+    background-color: #655d90;
+}
+
+.footer-all {
+    margin: 0 10%;
+}
+
+.footer-container {
+    background-color: #27262c;
+    color:  #f4eeff;
+    padding: 56px 40px 32px;
+    
+}
+
+.footer-links-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 30px;
+}
+
+.footer-links-container a {
+    text-decoration: none;
+    color: inherit
+}
+
+.footer-links-container a :visited{
+    text-decoration: none;
+    color: #f4eeff
+}
+
+.footer-links-container h4 {
+    color:  #7455b7
+}
+
+
+@media (max-width: 967px) {
+    .footer-links-container {
+        display: block;
+    }
+
+    .footer-links-container div {
+        padding-top: 15px
+    }
+}
