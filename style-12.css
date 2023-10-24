@@ -1,0 +1,96 @@
+.html,
+body {
+    background-color: #655d90;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-all {
+    margin: 0 5%;
+}
+
+.footer-container {
+    background-color: #27262c;
+    color:  #f4eeff;
+    padding: 56px 40px 32px;    
+    width: 100%;
+}
+
+.footer-links-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 30px;
+    margin: 0 0 30px 0;
+}
+
+.footer-links-container p {
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+
+.footer-links-container a {
+    text-decoration: none;
+    color: inherit
+}
+
+.footer-links-container a :visited{
+    text-decoration: none;
+    color: #f4eeff
+}
+
+.footer-links-container h4 {
+    color:  #7455b7
+}
+
+.footer-socialmedia-container {
+    display: flex nowrap;
+    padding: 0 40px 0 0;  
+    margin: 0 0 0 5%;
+}
+
+#footer-pancakeswap-logo { 
+    width: 150px;
+    height: auto;
+    padding: 10px 0 0 0;
+}
+
+.social-media-logo {
+    padding-right: 10px;
+}
+
+.footer-socialmedia-container a {
+    text-decoration: none;
+    color: initial;
+}
+
+@media (min-width: 1078px) {
+    #footer-pancakeswap-logo-reduced { 
+        display: none;
+    }
+}
+
+
+@media (max-width: 967px) {
+    .footer-links-container {
+        display: block;
+    }
+
+    .footer-links-container div {
+        padding-top: 15px
+    }
+
+    #footer-pancakeswap-logo-reduced {
+        display: none;
+    }
+
+    #footer-pancakeswap-logo {
+        display: inline;
+    }
+}
+
+@media (max-width: 1078px) and (min-width: 967px) {
+    #footer-pancakeswap-logo {
+        display: none;
+    }
+}

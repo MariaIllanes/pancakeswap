@@ -1,0 +1,15 @@
+.ecosystem-card {
+    position: relative;
+    width: 200px;
+  }
+  
+  #nohover-img-trade1 {
+    width: 100%;
+    height: auto;
+    transition: 0.3s; 
+  }
+  
+  #nohover-img-trade1hover {
+    transform: scale(1); 
+  }
+  
