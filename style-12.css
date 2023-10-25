@@ -1,23 +1,32 @@
 .html,
 body {
     background-color: #655d90;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-all {
-    margin: 0 10%;
+    margin: 0 5%;
 }
 
 .footer-container {
     background-color: #27262c;
     color:  #f4eeff;
-    padding: 56px 40px 32px;
-    
+    padding: 56px 40px 32px;    
+    width: 100%;
 }
 
 .footer-links-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     gap: 30px;
+    margin: 0 0 30px 0;
+}
+
+.footer-links-container p {
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }
 
 .footer-links-container a {
@@ -34,6 +43,191 @@ body {
     color:  #7455b7
 }
 
+.footer-socialmedia-container {
+    display: flex nowrap;
+    padding: 0 40px 0 0;  
+    margin: 0 0 0 5%;
+}
+
+.footer-linked :hover{
+    text-decoration: underline;
+}
+
+#footer-pancakeswap-logo { 
+    width: 180px;
+    height: auto;
+    padding: 10px 0 0 0;
+}
+
+.social-media-logo {
+    padding-right: 10px;
+}
+
+.footer-socialmedia-container a {
+    text-decoration: none;
+    color: initial;
+}
+
+#footer-separator {
+    border-color: #383739;
+    display: block;
+}
+
+.footer-buttons{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 0 40px;    
+}
+
+.footer-buttons a:visited{
+    color: inherit;
+}
+
+.footer-rigth{
+    display: flex;
+    gap: 20px;
+    align-content: center;
+}
+
+#footer-mini-logo-img{
+    align-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+#footer-mini-logo-text{
+    color: #655d90;
+    text-decoration: none;
+    align-items: center;
+    margin: 0;
+} 
+
+/* .footer-dollar-link a{
+    justify-self: center;
+
+} */
+
+#footer-dollar-link{
+    justify-content: center;
+    background-color: orange;
+} 
+
+#footer-dollar-link a{
+    display: inline-flex;
+    margin: 0;
+    align-items: center;
+} 
+
+#footer-dollar-link a:visited{
+    color: inherit;
+} 
+
+#footer-button-cake{
+    color:#27262c;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    align-content: center;
+}
+
+
+/* toogle button inicio ------------------------------------------------------------------------------------------------------------------------------------*/
+    /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 8px;
+    bottom: 5px;
+    background-color: #27262c;
+    border-color: rgb(183, 165, 183); 
+    border: 1px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: grey;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+ .slider-images{
+    display: inline-flex;
+    padding: 5px 12px;
+ }
+
+ .icon-light{
+    align-content: center;
+ }
+/* toogle button fin  ------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1078px) {
+    #footer-pancakeswap-logo-reduced { 
+        display: none;
+    }
+}
+
 
 @media (max-width: 967px) {
     .footer-links-container {
@@ -42,5 +236,19 @@ body {
 
     .footer-links-container div {
         padding-top: 15px
+    }
+
+    #footer-pancakeswap-logo-reduced {
+        display: none;
+    }
+
+    #footer-pancakeswap-logo {
+        display: inline;
+    }
+}
+
+@media (max-width: 1078px) and (min-width: 967px) {
+    #footer-pancakeswap-logo {
+        display: none;
     }
 }
