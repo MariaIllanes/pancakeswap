@@ -1,0 +1,57 @@
+
+
+
+#exchange-figures,
+.exchange-counters{
+    color: #7455b7;
+    font-weight: bold;
+}
+
+hr{
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    margin: 25px 0;
+}
+
+.exchange-counters{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.exchange-titles{
+    font-weight: bold;
+    margin-bottom: 0
+}
+
+.exchange-stats2-title{
+    display: flex;
+    justify-content: center;
+}
+
+.exchange-statistics-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.exchange-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+
+
+
+/* @media (max-width: 967px){
+    .exchange-statistics-container{
+        background-color: lightblue;
+    }
+
+    .exchange-info-container{
+        padding: 0 200px;
+    }
+} */
