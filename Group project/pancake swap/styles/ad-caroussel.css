@@ -1,0 +1,45 @@
+
+:root {
+--darkh2: #b8acd2;
+--lighth2: #7a6cab;
+
+}
+
+
+.ad-carrousel {
+    background-color: #edf6fe;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+.card-containerAC {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardAC {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #3168ff;
+    border-radius: 10%;
+    
+}
+
+.cardAC div{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.mbimg{
+    height: 650px;
+    width: 650px;
+}
+
+.titleAC{
+    font-size: 1.2rem;
+    line-height: 0%;
+    margin: 0rem;
+}
