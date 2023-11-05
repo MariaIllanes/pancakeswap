@@ -10,6 +10,7 @@ body {
     box-shadow: 2px 2px #1B99AA;
     text-decoration: none;
     align-content: center;
+    width: fit-content;
 }
 
 .btn-sec {
