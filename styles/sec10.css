@@ -35,13 +35,13 @@ body img {
     display: flex;
 }
 
-.arrow-left-container {
+.arrow-container {
     display: flex;
     align-items: center;
     margin-right: 8px;
 }
 
-.arrow-left {
+.arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ body img {
     cursor: pointer;
 }
 
-.arrow-left svg {
+.arrow svg {
     align-self: center;
     fill: #6bd9e1;
     color: #6bd9e1;
@@ -61,7 +61,8 @@ body img {
 
 .news-cards-container {
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
+    /* En el de arriba en la original estaba como "auto" y no como "hidden", pero dado el javascript que yo he hecho, la he puesto como hidden porque la barra de scroll se veía. */
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     border-radius: 24px;
@@ -128,6 +129,8 @@ body img {
 }
 
 .text-description {
+    white-space: pre-wrap; 
+    /* Este de arriba en la original estaba puesto como style directamente en el html. Como he hecho las cards con js lo he puesto aquí. */
     color: #280d5f;
     font-weight: 600;
     margin-top: 16px;
@@ -149,3 +152,5 @@ body img {
     margin-top: 16px;
     max-height: 56px;
 }
+
+
