@@ -76,29 +76,43 @@ cardData.forEach((data) => {
 const arrowLeft = document.querySelector(".arrow-left");
 const arrowRight = document.querySelector(".arrow-right");
 
-// Establece un valor de desplazamiento inicial
-let scrollPosition = 0;
-
 // Función para desplazarse a la izquierda
 arrowLeft.addEventListener("click", () => {
-  // Reduzca el valor del desplazamiento para moverse a la izquierda
-  scrollPosition -= 300; // Puedes ajustar este valor según tus necesidades
+  // Obtén el valor actual de desplazamiento
+  const currentScrollPosition = cardsContainer.scrollLeft;
+  // Establece el valor de desplazamiento deseado restando un cierto valor (300 en este caso)
+  let desiredScrollPosition = currentScrollPosition - 300; // Puedes ajustar este valor según tus necesidades
+
   // Asegúrate de que no sea un valor negativo
-  if (scrollPosition < 0) {
-    scrollPosition = 0;
+  desiredScrollPosition = Math.max(0, desiredScrollPosition);
+
+  // Hacer scroll solo si no hemos llegado al límite izquierdo
+  if (currentScrollPosition !== desiredScrollPosition) {
+    cardsContainer.scrollTo({
+      left: desiredScrollPosition,
+      behavior: "smooth",
+    });
   }
-  cardsContainer.scrollTo({
-    left: scrollPosition,
-    behavior: "smooth",
-  });
 });
 
 // Función para desplazarse a la derecha
 arrowRight.addEventListener("click", () => {
-  // Aumenta el valor del desplazamiento para moverse a la derecha
-  scrollPosition += 300; // Puedes ajustar este valor según tus necesidades
-  cardsContainer.scrollTo({
-    left: scrollPosition,
-    behavior: "smooth",
-  });
+  // Obtén el valor actual de desplazamiento
+  const currentScrollPosition = cardsContainer.scrollLeft;
+  // Establece el valor de desplazamiento deseado sumando un cierto valor (300 en este caso)
+  let desiredScrollPosition = currentScrollPosition + 300; // Puedes ajustar este valor según tus necesidades
+
+  // Asegúrate de que no sea mayor que el ancho total del contenido
+  desiredScrollPosition = Math.min(
+    cardsContainer.scrollWidth - cardsContainer.offsetWidth,
+    desiredScrollPosition
+  );
+
+  // Hacer scroll solo si no hemos llegado al límite derecho
+  if (currentScrollPosition !== desiredScrollPosition) {
+    cardsContainer.scrollTo({
+      left: desiredScrollPosition,
+      behavior: "smooth",
+    });
+  }
 });
