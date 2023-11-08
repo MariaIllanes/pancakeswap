@@ -49,8 +49,7 @@ body {
 
 .btn-sec {
     border: 0;
-    background-color: var(--select-bg);
-    color: var(--btn-bg);
+    color: var(--btn-dark-text);
     font-weight: bold;
     font-size: 1rem;
 }
