@@ -12,21 +12,22 @@
     <title>Home | PancakeSwap</title>
 </head>
 <body>
-    <section class="main-navbar">
+    <div class="theme-change dark-theme" id="isDark"></div>
+    <section class="main-navbar theme-change dark-theme" id="section1">
             <div class="menu-list">
-                <div class="logo"><img src="/assets/bunny.png" class="logo-icon"><h2>PancakeSwap</h2></div>
-                <div class="trade inlist"><h2>Trade</h2></div>
-                <div class="earn inlist"><h2>Earn</h2></div>
-                <div class="game inlist"><h2>Game</h2></div>
-                <div class="nft inlist"><h2>NFT</h2></div>
-                <div class="more inlist"><h2>• • •</h2></div>
+                <div class="logo"><img src="/assets/bunny.png" class="logo-icon theme-change dark-theme"><h1>PancakeSwap</h1></div>
+                <div class="trade theme-change dark-theme"><h2>Trade</h2></div>
+                <div class="earn theme-change dark-theme"><h2>Earn</h2></div>
+                <div class="game theme-change dark-theme"><h2>Game</h2></div>
+                <div class="nft theme-change dark-theme"><h2>NFT</h2></div>
+                <div class="more theme-change dark-theme"><h2>• • •</h2></div>
             </div>
             <div class="menu-icon-list">
-                <div class="exchange"><img src="/assets/exchange.png" class="logo-icon"><h2>$2.315</h2></div>
-                <div class="language"><h1><i class="fa-solid fa-globe icon-list"></i></h1></div>
-                <div class="settings"><h1><i class="fa-solid fa-gear icon-list"></i></h1></div>
+                <div class="exchange theme-change dark-theme"><img src="/assets/exchange.png" class="logo-icon"><h2>$2.315</h2></div>
+                <div class="language theme-change dark-theme"><h2><i class="fa-solid fa-globe icon-list"></i></h2></div>
+                <div class="settings theme-change dark-theme"><h2><i class="fa-solid fa-gear icon-list"></i></h2></div>
            
-            <div class="chain"><select name="chain" id="select-chain" >
+            <div class="chain"><select name="chain" class="theme-change dark-theme" id="select-chain" >
                 <option value="Select a Network" disabled>Select a Network</option>
                 <option value="BNB" selected><img src="/assets/bnb.png"><h1>BNB Smart Chain</h1></option>
                 <option value="Ethereum"><img src="/assets/eth.png">Ethereum</option>
@@ -38,7 +39,7 @@
                 <option value="opBNB"><img src="/assets/bnb.png">opBNB Mainnet</option>
                 <option value="Aptos"><img src="/assets/aptos.png">Aptos</option>
               </select></div>
-            <div class="wallet"><button class="btn-main-blue">Connect Wallet</button></div>
+            <div class="wallet"><button class="btn-main-blue" id="main">Connect Wallet</button></div>
     </div>
     </section>
     <script src="js/themechange.js"></script>
