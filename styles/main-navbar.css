@@ -1,11 +1,24 @@
 
 :root {
-    --darkh2: #b8acd2;
-    --lighth2: #7a6cab;
-    --standar-size: 1rem;
-    --select-bg: #fffefe;
+    /* Light */
+    --light-text1h2: #b8acd2;
+    --light-text2h2: #7a6cab;
+    --light-text3h1: #290e5e;
+    --btn-light-text: #ffffff;
+    --bg-light: #fbf9fb;
+     
+    /* Dark */
+    --bg-dark: #27272d;
+    --dark-text3h1: #ffffff;
+    --btn-dark-text: #08070a;
     
+
+     /* All */
+     --btn-bg: #1FC7D4;
+     --standar-size: 1rem;
     }
+
+
     
 .main-navbar{
     display: flex;
