@@ -1,19 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const themeChange = document.getElementById('main');
+    const themeChangeElements = document.querySelectorAll('.theme-change');
     const button = document.getElementById('main');
-    const section = document.getElementById('section6')
+    const darkCheck = document.getElementById('isDark');
+    let isDark = darkCheck.classList.contains('dark-theme');
 
-
-    let isDark = button.classList.contains('dark-theme');
-
-    themeChange.addEventListener('click', function() {
+    button.addEventListener('click', function() {
         isDark = !isDark;
-        if (isDark) {
-            button.classList.replace('dark-theme','light-theme');
-            section.classList.replace('dark-theme','light-theme');
-        } else {
-            button.classList.replace('light-theme','dark-theme');
-            section.classList.replace('light-theme','dark-theme');
-        }
+        
+        themeChangeElements.forEach(element => {
+            setTimeout(() => {
+                if (isDark) {
+                    element.classList.replace('dark-theme', 'light-theme');
+                } else {
+                    element.classList.replace('light-theme', 'dark-theme');
+                }
+            }, 500);
+        });
     });
 });
