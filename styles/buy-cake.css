@@ -4,12 +4,13 @@
     --lighth2: #7a6cab;
     --darkerh1: #290e5e;
     --standar-size: 1rem;
-    --select-bg: #fffefe;
+    --select-bg: #fbf9fb;
     
     }
     
 .buy-cake {
     display: flex;
+    background-color: var(--select-bg);
     flex-direction: column;
     align-items: center;
     justify-content: center;
