@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .other-element-container {
     display: inline;
     position: fixed;
@@ -47,3 +52,9 @@
     flex-shrink: 0;
     margin-left: 0.5rem;
 }
+
+.BORRAR {
+    height: 1500px;
+    background-color: rgb(140, 114, 167);
+}
+
