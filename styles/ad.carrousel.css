@@ -31,7 +31,7 @@ section.dark-theme{
         margin-left: auto;
         margin-right: auto;
         width: 80%;
-        background-color: #0d57ff;
+        background: linear-gradient(#0553ff,#ffffff);
         padding: 1.5rem;
         border-radius: 2rem;
         justify-items: normal;
@@ -56,7 +56,7 @@ section.dark-theme{
 }
 
 .CTA button{
-    background-color: #0d57ff;
+    background: none;
     color: black;
     padding: 2.5rem 1.5rem 1.5rem 0;
 }
