@@ -1,0 +1,66 @@
+:root{
+    --section-bg-light: #ebf8fe;
+    --section-bg-dark:#1a1526;
+}
+
+
+section.light-theme {
+    background-color: var(--section-bg-light);
+}
+
+section.dark-theme{
+    background-color: var(--section-bg-dark);
+}
+
+.caroussel-card{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.text-containerAC{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+   
+}
+
+.cardAC{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        background: linear-gradient(#0553ff,#ffffff);
+        padding: 1.5rem;
+        border-radius: 2rem;
+        justify-items: normal;
+}
+
+.titleAC{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.titleAC h3{
+    margin: 0;
+}
+
+.subtitleAC {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.subtitleAC h4{
+    margin: 0;
+}
+
+.CTA button{
+    background: none;
+    color: black;
+    padding: 2.5rem 1.5rem 1.5rem 0;
+}
+
+.CTA button:hover {
+    opacity: 40%;
+}
