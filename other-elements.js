@@ -14,7 +14,7 @@ arrowButton.addEventListener("click", () => {
   // Restaurar el tamaño del botón después de 500 ms
   setTimeout(function () {
     arrowButton.style.transform = "scale(1)";
-  }, 300);
+  }, 200);
 });
 
 // Función para controlar la visibilidad de la sección en función del desplazamiento
