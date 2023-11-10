@@ -29,19 +29,22 @@
     gap: 3.5rem;
     justify-content: space-between;
     margin: 0;
+    max-width: 100%;
+    padding-bottom: 0.5rem;
 }
 
 section.dark-theme {
     background-color: var(--bg-dark);
 }
 
-.dark-theme h1{
-   color: var(--dark-text3h1);
+section.dark-theme svg.light{
+    display: none;
 }
 
-.light-theme h1{
-    color: var(--btn-dark-text);
+section.light-theme svg.dark{
+    display: none;
 }
+
 .logo{
     display: flex;
     flex-direction: row;
@@ -137,9 +140,68 @@ select.dark-theme{
     color: var(--btn-light-text);
 }
 
+.more {
+    white-space: nowrap;
+}
 
 
 select.light-theme{
     background-color: var(--bg-light);
     box-shadow: 0.5px 1px #d7dbdc;
+}
+
+@media (max-width: 970px) {
+    .exchange {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .menu-list {
+        display: none;
+    }
+    .hidden-logo {
+        display: block;
+        min-width: 2rem;
+    }
+    .text-hidden {
+        display: none;
+    }
+    .main-navbar{
+        max-width: 150vw;
+    }
+}
+
+@media (min-width: 850px) {
+    .hidden-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+        .exchange h2{
+            font-size: 0.8rem;
+        }
+        
+        .icon-list {
+           font-size: 1rem;
+        }
+        .dark-theme h2 {
+            font-size: 0.8rem;
+        
+        }
+        
+        .light-theme h2 {
+            font-size: 0.8rem;
+        }
+}
+
+@media (max-width: 500px) {
+    .wallet {
+        max-width: 100%;
+    }
+
+    .chain {
+        max-width: 100%;
+    }
 }
