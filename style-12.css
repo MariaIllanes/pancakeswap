@@ -7,6 +7,8 @@
     color:  #f4eeff;
     padding: 56px 40px 32px;    
     width: 100%;
+    font-size: 1rem;
+    /* overflow: show; */
 }
 
 .footer-links-container {
@@ -17,9 +19,9 @@
 }
 
 .footer-links-container p {
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: wrap;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
 }
 
 .footer-links-container a {
@@ -37,8 +39,8 @@
 }
 
 .footer-socialmedia-container {
-    display: flex nowrap;
-    padding: 0 40px 0 0;  
+    display: inline-flex;
+    padding: 0 0 20px 0;  
     margin: 0 0 0 5%;
 }
 
@@ -53,7 +55,7 @@
 }
 
 .social-media-logo {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .footer-socialmedia-container a {
@@ -62,20 +64,24 @@
 }
 
 #footer-separator {
-    border-color: #383739;
+    border-color: #69686a;
     display: block;
+    margin: 0 0 0 5%;
+    width: 88%;
 }
 
 .footer-buttons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-decoration: none;
-    background-color: yellow;
-    padding: 0 40px;    
+    padding: 30px 40px 0 0;  
+    margin: 0 5%;
 }
 
 .footer-buttons a:visited{
     color: inherit;
+    text-decoration: none;
 }
 
 .footer-rigth{
@@ -86,49 +92,164 @@
 
 #footer-mini-logo-img{
     align-content: center;
+    text-decoration: none;
     width: 30px;
     height: 30px;
 }
 
 #footer-mini-logo-text{
-    color: #655d90;
+    color: #9694a5;
     text-decoration: none;
     align-items: center;
     margin: 0;
 } 
 
-/* .footer-dollar-link a{
-    justify-self: center;
-
-} */
 
 #footer-dollar-link{
     justify-content: center;
-    background-color: orange;
+    align-items: center;
+    padding: 5px 0;
 } 
 
 #footer-dollar-link a{
     display: inline-flex;
     margin: 0;
     align-items: center;
+    text-decoration: none;
+    font-weight: bold;
 } 
 
 #footer-dollar-link a:visited{
     color: inherit;
 } 
 
-#footer-button-cake{
+.btn-footer {
     color:#27262c;
-    background-color: aqua;
+    background-color: #1FC7D4;
     border-radius: 20px;
     padding: 10px 20px;
+    box-shadow: 2px 2px #1B99AA;
     text-decoration: none;
     align-content: center;
 }
 
 
-/* toogle button inicio ------------------------------------------------------------------------------------------------------------------------------------*/
-    /* The switch - the box around the slider */
+.footer-left{
+    display: inline-flex;
+    gap: 20px;
+}
+
+
+
+/*  selects style */
+.language-menu{
+    display: inline-flex;
+}
+
+.icon-language{
+    align-items: center;
+    align-content: center;
+}
+
+.select-language{
+    -webkit-appearance: none; 
+    appearance: auto; 
+    max-width: 300px; 
+    line-height: 0px;
+    background-color: #27262c;
+    display: none;
+    border: none;
+    font-size: 1rem;
+    color: #f4eeff;
+}
+
+ /* #select-language.open{
+    display: block;
+} 
+#select-language:not(.open) option {
+    display: none;
+} 
+
+.select {
+    -moz-appearance: none;
+     text-indent: 0.01px;
+     text-overflow: '';
+     color:black;
+     background: white;
+    -webkit-appearance:none;
+    -ms-appearance: none;
+    -o-appearance: none;
+     appearance: none;
+    } */
+
+.select-language:active{
+    -webkit-appearance: block; 
+    appearance: block; 
+    max-width: 300px; 
+    line-height: 0px;
+    background-color: #27262c;
+    display: block;
+}
+
+.select-language:hover{
+    display: block;
+}
+
+.select-language option{
+    background-color: #27262c;
+    color: #f4eeff;
+    font-weight: bold;
+    font-size: 10px;
+    border: 0px;
+    overflow-y: scroll;
+    position: static;
+}
+
+.select-language{
+    width: 120px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--greypurple);
+  }
+
+
+#telegram-language{
+    display:none;
+}
+
+#telegram-language:hover,
+#telegram-language:active{
+    display: show;
+}
+
+#footer-language{
+    display: inline-flex;
+    align-items: center;
+}
+
+#footer-language label{
+   padding-left: 3px;
+}
+
+
+
+
+
+
+/* toogle button inicio*/
+    /* Box around slider */
 .switch {
     position: relative;
     display: inline-block;
@@ -143,7 +264,7 @@
     height: 0;
   }
   
-  /* The slider */
+  /* Slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -151,7 +272,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: grey;
+    background-color: rgb(128, 128, 128);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -161,11 +282,11 @@
     content: "";
     height: 30px;
     width: 30px;
-    left: 8px;
-    bottom: 5px;
+    left: 4px;
+    bottom: 3px;
     background-color: #27262c;
-    border-color: rgb(183, 165, 183); 
-    border: 1px;
+    border: 2px solid rgb(130, 15, 130); 
+    opacity: 0.5;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -174,19 +295,20 @@
     background-color: grey;
   }
   
-  input:focus + .slider {
+  /* input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
-  }
+  } */
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
   }
   
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
+    display: flex;
   }
   
   .slider.round:before {
@@ -196,13 +318,16 @@
 
  .slider-images{
     display: inline-flex;
-    padding: 5px 12px;
+    padding: 0 0px 0px 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
  }
 
  .icon-light{
     align-content: center;
  }
-/* toogle button fin  ------------------------------------------------------------------------------------------------------------------------------------*/
+/* toogle button end */
 
 
 
@@ -215,14 +340,19 @@
 
 
 
-@media (min-width: 1078px) {
+@media (min-width: 1078px){
     #footer-pancakeswap-logo-reduced { 
         display: none;
     }
 }
 
+@media (max-width: 1078px) and (min-width: 967px){
+    #footer-pancakeswap-logo {
+        display: none;
+    }
+}
 
-@media (max-width: 967px) {
+@media (max-width: 968px){
     .footer-links-container {
         display: block;
     }
@@ -237,11 +367,5 @@
 
     #footer-pancakeswap-logo {
         display: inline;
-    }
-}
-
-@media (max-width: 1078px) and (min-width: 967px) {
-    #footer-pancakeswap-logo {
-        display: none;
     }
 }
