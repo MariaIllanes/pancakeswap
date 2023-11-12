@@ -1,0 +1,47 @@
+.modal-content{
+
+background-color: #27262c !important;
+color: white !important;
+border-radius: 2rem !important;
+
+}
+
+.modal-header{
+    background-color: #3b394c !important;
+    border-radius: 2rem 2rem 0 0 !important;
+    border-bottom: none !important;
+}
+
+.modal-subtitle{
+    color: #9a6aff;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-size: 12px;
+}
+
+.text-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+
+.btn-close{
+   background-image: none !important;
+   padding-top: 0 !important;
+   padding-left: 0 !important;
+   padding-right: 1.5rem !important;
+   opacity: 100% !important;
+}
+
+.btn-close:hover{
+    opacity: 70% !important;
+ }
+
+
+ .text-toggle-icon path{
+    color: #afa4c7 !important;
+    fill: #afa4c7;
+ }
