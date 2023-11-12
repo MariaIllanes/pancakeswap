@@ -1,11 +1,25 @@
 
 :root {
-    --darkh2: #b8acd2;
-    --lighth2: #7a6cab;
-    --standar-size: 1rem;
-    --select-bg: #fffefe;
+    /* Light */
+    --light-text1h2: #b8acd2;
+    --light-text2h2: #7a6cab;
+    --light-text3h1: #290e5e;
+    --btn-light-text: #ffffff;
+    --bg-light: #eff4f5;
+     
+    /* Dark */
+    --bg-dark: #27272d;
+    --bg-select-dark: #343447;
+    --dark-text3h1: #ffffff;
+    --btn-dark-text: #08070a;
     
+
+     /* All */
+     --btn-bg: #1FC7D4;
+     --standar-size: 1rem;
     }
+
+
     
 .main-navbar{
     display: flex;
@@ -15,8 +29,21 @@
     gap: 3.5rem;
     justify-content: space-between;
     margin: 0;
+    max-width: 100%;
+    padding-bottom: 0.5rem;
 }
-    
+
+section.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+section.dark-theme svg.light{
+    display: none;
+}
+
+section.light-theme svg.dark{
+    display: none;
+}
 
 .logo{
     display: flex;
@@ -26,7 +53,7 @@
     padding-left: var(--standar-size);
 }
 
-.logo h2{
+.logo h1{
     font-size: 1.3rem;
 }
 
@@ -41,9 +68,15 @@
     align-items: center;
 }
 
-.inlist h2 {
+.dark-theme h2 {
     font-size: var(--standar-size);
-    color: var(--lighth2);
+    color: var(--light-text1h2);
+    font-weight: normal;
+}
+
+.light-theme h2 {
+    font-size: var(--standar-size);
+    color: var(--light-text2h2);
     font-weight: normal;
 }
 
@@ -89,17 +122,86 @@
 }
 
 .chain select{
-    background-color: #eff4f5;
     border-radius: 15px 15px 15px 15px;
     padding: 7px 16px;
     border: none;
-    box-shadow: 0.5px 1px #d7dbdc;
+    
     font-weight: bold;
     font-size: var(--standar-size);
     width: auto;
 }
 
-option {
-    width: auto;
-    color: #000; /* Text color for options */
+.chain select:hover{
+    opacity: 70%;
+}
+
+select.dark-theme{
+    background-color: var(--bg-select-dark);
+    color: var(--btn-light-text);
+}
+
+.more {
+    white-space: nowrap;
+}
+
+
+select.light-theme{
+    background-color: var(--bg-light);
+    box-shadow: 0.5px 1px #d7dbdc;
+}
+
+@media (max-width: 970px) {
+    .exchange {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .menu-list {
+        display: none;
+    }
+    .hidden-logo {
+        display: block;
+        min-width: 2rem;
+    }
+    .text-hidden {
+        display: none;
+    }
+    .main-navbar{
+        max-width: 150vw;
+    }
+}
+
+@media (min-width: 850px) {
+    .hidden-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+        .exchange h2{
+            font-size: 0.8rem;
+        }
+        
+        .icon-list {
+           font-size: 1rem;
+        }
+        .dark-theme h2 {
+            font-size: 0.8rem;
+        
+        }
+        
+        .light-theme h2 {
+            font-size: 0.8rem;
+        }
+}
+
+@media (max-width: 500px) {
+    .wallet {
+        max-width: 100%;
+    }
+
+    .chain {
+        max-width: 100%;
+    }
 }
