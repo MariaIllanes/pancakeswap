@@ -1,4 +1,4 @@
-.modal-content{
+.modal-content.dark-theme{
 
 background-color: #27262c !important;
 color: white !important;
@@ -6,11 +6,27 @@ border-radius: 2rem !important;
 
 }
 
-.modal-header{
+.modal-content.light-theme{
+
+    background-color: white !important;
+    color: #280d5f !important;
+    border-radius: 2rem !important;
+    
+    }
+    
+
+.modal-header.dark-theme{
     background-color: #3b394c !important;
     border-radius: 2rem 2rem 0 0 !important;
     border-bottom: none !important;
 }
+
+.modal-header.light-theme{
+    background-color: #e9f1f5 !important;
+    border-radius: 2rem 2rem 0 0 !important;
+    border-bottom: none !important;
+}
+
 
 .modal-subtitle{
     color: #9a6aff;
@@ -45,3 +61,99 @@ border-radius: 2rem !important;
     color: #afa4c7 !important;
     fill: #afa4c7;
  }
+
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(148,158,158);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    left: 4px;
+    bottom: 3px;
+    border: 2px solid #9a6aff; 
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+  }
+  
+  input:checked + .slider {
+    background-color: grey;
+  }
+  
+  /* input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  } */
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+    background-color:#27262c;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    display: flex;
+    border: 0;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+ .slider-images{
+    display: inline-flex;
+    padding: 0 0px 0px 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+ }
+
+.slider-images svg{
+    z-index: 0;
+}
+
+ .icon-light{
+    align-content: center;
+ }
+/* toogle button end */
+
+
+
+#icon-sun.light-theme{
+ stroke: #ffb036 !important;
+}
+
+#icon-moon.light-theme{
+    stroke: white !important;
+   }
+
