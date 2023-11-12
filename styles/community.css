@@ -2,3 +2,38 @@
 .color-change{
     color: #7745d8;
 }
+
+
+.community.dark-theme{
+    background: linear-gradient(#0b4574, #081116);
+}
+
+body{
+    margin: 0
+}
+
+.community-container{
+    width: 65%;
+    margin: auto;
+    background-color: #020810;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 3rem;
+}
+
+.community-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.community-card{
+    min-width: 20rem;
+    min-height: 20rem;
+    border-radius: 2rem;
+    background-color: #7745d8;
+}
