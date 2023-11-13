@@ -31,11 +31,11 @@
     max-width: 100%;
 }
 
-section.dark-theme {
+.main-navbar.dark-theme {
     background-color: var(--bg-dark);
 }
 
-section.dark-theme svg.light{
+.main-navbar.dark-theme svg.light{
     display: none;
 }
 
@@ -195,7 +195,7 @@ section.light-theme svg.dark{
     background-color: #ecf5fe !important;
 }
 
-.chain-item.dark-theme.dropdown-header,.dark-theme.dropdown-menu{
+.chain-item.dark-theme.dropdown-header,.chain-item.dark-theme.dropdown-menu{
     background-color: var(--bg-dark) !important;
     color: var(--bg-light);
 }
@@ -317,6 +317,10 @@ section.light-theme svg.dark{
     align-self: flex-end;
 }
 
+#trade-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
+
 /* Earn Dropdown */
 
 .earn-dropdown.btn-secondary{
@@ -365,6 +369,9 @@ section.light-theme svg.dark{
     align-self: flex-end;
 }
 
+#earn-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
 
 /* NFT Dropdown */
 
@@ -412,6 +419,10 @@ section.light-theme svg.dark{
 
 .nft-drop-icon{
     align-self: flex-end;
+}
+
+#nft-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
 }
 
 /* Game Dropdown */
@@ -462,6 +473,9 @@ section.light-theme svg.dark{
     align-self: flex-end;
 }
 
+#game-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
 
 /* More Dropdown */
 
@@ -509,4 +523,12 @@ section.light-theme svg.dark{
 
 .more-drop-icon{
     align-self: flex-end;
+}
+
+#more-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+.more-item.dropdown-divider{
+    border-top: 0.1px solid var(--light-text2h2);
 }
