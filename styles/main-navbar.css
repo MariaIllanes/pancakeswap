@@ -171,7 +171,8 @@ section.light-theme svg.dark{
 }
 
 .dark-theme.dropdown-item:hover{
-    background-color: #7a6cab !important;
+    background-color: #353446 !important;
+    color: white;
 }
 
 .dark-theme.dropdown-item{
@@ -252,3 +253,20 @@ section.light-theme svg.dark{
         max-width: 100%;
     }
 }
+
+.trade-dropdown a{
+    border: none !important;
+    background: none !important;
+    appearance: none !important;
+   
+}
+
+
+.dark-theme.trade-dropdown.btn-danger,.btn-check:checked+.btn, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    color: #7a6eaa !important;
+}
+
+.light-theme.trade-dropdown.btn.show{
+    color: #b8add2 !important; 
+}
+
