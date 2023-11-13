@@ -5,6 +5,10 @@
 
 }
 
+.main-banner{
+    display: flex;
+    flex-direction: column;
+}
 
 .main-banner.light-theme {
     background-color: #edf6fe;
@@ -20,7 +24,7 @@
     margin-left: auto;
     display: flex;
     flex-direction: row;
-    gap: 6rem;
+    align-items: center;
 }
 
 .mbimg{
@@ -33,7 +37,6 @@
     line-height: 110%;
     max-width: 33rem;
     margin: 0;
-    padding-top: 6rem;
 }
 
 .text-container h2{
@@ -44,8 +47,6 @@
 .text-container h4{
     color: var(--lighth2);
     font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
 .light-theme h2{
@@ -90,6 +91,7 @@
 #main-banner-img{
     position: relative;
     left: -50px;
+    top: 20px;
     animation-name: slidein;
     animation: main-banner-img 4s infinite linear;
 }
