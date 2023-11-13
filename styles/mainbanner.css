@@ -88,6 +88,15 @@
 }
 
 
+.btn-sec-mb a{
+    text-decoration: none;
+    color: #1FC7D4;
+}
+
+.btn-sec-mb.light-theme a{
+    text-decoration: none;
+}
+
 #main-banner-img{
     position: relative;
     left: -50px;
