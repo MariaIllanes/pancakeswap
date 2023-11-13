@@ -80,3 +80,24 @@
 .btn-sec-mb:hover {
     opacity: 70%;
 }
+
+
+.mbimg img{
+    width: 700px;
+}
+
+
+#main-banner-img{
+    position: relative;
+    left: -50px;
+    animation-name: slidein;
+    animation: main-banner-img 4s infinite linear;
+}
+
+
+@keyframes main-banner-img {
+    from { transform: rotate(0deg)  translate(5px) rotate(0deg); }
+    to { transform: rotate(360deg) translate(10px) rotate(-360deg); }
+}
+
+
