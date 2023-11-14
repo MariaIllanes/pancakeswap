@@ -1,3 +1,4 @@
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -5,6 +6,17 @@
     100% {
         transform: translateX(-100%);
     }
+}
+
+@media (min-width: 968px) {
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    } 
 }
 
 * {
@@ -203,14 +215,7 @@ div {
     }
 }
 
-.content-subcontainer-one {
-    overflow-x: hidden !important;
-    display: flex !important;
-    flex-direction: row !important;
-    position: relative;
-    width: 100vh;
-    transform: rotate(-90deg);
-}
+
 
 .content-subcontainer-one-style {
     position: relative;
@@ -225,6 +230,16 @@ div {
         height: 210px !important;
         width: 210px !important;
     }
+}
+
+.content-subcontainer-one {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%; 
+    /* He cambiado esto de 100vh a 100% para que se ajustara como en la original porque sino no salía, aunque en la original está como 100vh */
+    transform: var(--transform);
 }
 
 .carousel {
@@ -245,12 +260,13 @@ div {
     display: flex;
     min-width: auto;
     flex-direction: row;
+    align-items: center;
 }
 
 
 .child {
-    transform: rotate(90deg); 
-    /* Mirar a ver si hay que cambiarlo y ponerlo con var(--...) este y los demás que falten */
+    transform: var(--transform);
+    
 }
 
 .bYcBXK {
@@ -496,9 +512,9 @@ div {
     align-items: center;
     gap: 8px;
     border-radius: 24px;
-    border: 1px solid var(--colors-cardBorder);
-    background: var(--colors-backgroundAlt);
-    box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
     box-sizing: border-box;
     height: 40px;
     flex-grow: 0;
@@ -530,9 +546,9 @@ div {
         top: 0px;
         width: 98px;
         border-radius: 24px;
-        border: 1px solid var(--colors-cardBorder);
-        background: var(--colors-backgroundAlt);
-        box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
     }
 }
 
@@ -543,9 +559,9 @@ div {
     align-items: center;
     gap: 8px;
     border-radius: 24px;
-    border: 1px solid var(--colors-cardBorder);
-    background: var(--colors-backgroundAlt);
-    box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
     box-sizing: border-box;
     height: 40px;
     flex-grow: 0;
@@ -577,9 +593,9 @@ div {
         top: 0px;
         width: 141px;
         border-radius: 24px;
-        border: 1px solid var(--colors-cardBorder);
-        background: var(--colors-backgroundAlt);
-        box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
     }
 }
 
@@ -590,9 +606,9 @@ div {
     align-items: center;
     gap: 8px;
     border-radius: 24px;
-    border: 1px solid var(--colors-cardBorder);
-    background: var(--colors-backgroundAlt);
-    box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
     box-sizing: border-box;
     height: 40px;
     flex-grow: 0;
@@ -624,9 +640,9 @@ div {
         top: 0px;
         width: 81px;
         border-radius: 24px;
-        border: 1px solid var(--colors-cardBorder);
-        background: var(--colors-backgroundAlt);
-        box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
     }
 }
 
@@ -650,53 +666,6 @@ div {
     font-size: 16px;
 }
 
-.child-svg-container-two {
-    display: flex;
-    padding: 8px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 24px;
-    border: 1px solid #e7e3eb;
-    background: #fff;
-    box-shadow: 0px 2px 0px 0px #e7e3eb;
-    box-sizing: border-box;
-    height: 40px;
-    flex-grow: 0;
-    width: fit-content;
-    margin-bottom: 21px;
-    margin-right: 16px;
-}
-
-
-@media screen and (min-width: 968px) {
-    .child-svg-container-two {
-    margin-bottom: 0px;
-    margin-right: 0px;
-    width: 52px;
-    white-space: nowrap;
-    position: relative;
-    left: -51px;
-    border: none;
-    background: none;
-    box-shadow: none;
-    }
-}
-
-@media screen and (min-width: 968px) {
-    .child-svg-container-two::before {
-        z-index: -1;
-        content: attr(data-content);
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        width: 108px;
-        border-radius: 24px;
-        border: 1px solid #e7e3eb;
-        background: #fff;
-        box-shadow: 0px 2px 0px 0px #e7e3eb;
-    }
-}
 
 .child-svg-text-two {
     color: #280d5f;
@@ -705,7 +674,7 @@ div {
     font-size: 16px;
 }
 
-.part.one.show::after {
+.part-one.show::after {
     transform: translateX(95%);
 }
 
@@ -949,14 +918,6 @@ div {
     }
 }
 
-.marquee-container {
-    overflow-x: hidden !important;
-    display: flex !important;
-    flex-direction: row !important;
-    position: relative;
-    width: 100vh;
-    transform: rotate(-90deg);
-}
 
 .fMr {
     position: relative;
@@ -973,6 +934,16 @@ div {
         height: 210px !important;
         width: 210px !important;
     }
+}
+
+.marquee-container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    /* He cambiado esto de 100vh a 100% para que se ajustara como en la original porque sino no salía, aunque en la original está como 100vh */
+    transform: var(--transform);
 }
 
 .marquee {
@@ -994,6 +965,227 @@ div {
     color: black;
     flex-shrink: 0;
 }
+
+.hRpYnQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 968px) {
+    .hRpYnQ {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -51.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+}
+
+
+@media screen and (min-width: 968px) {
+    .hRpYnQ::before {
+        z-index: -1;
+        content: attr(data-content);
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 107px;
+        border-radius: 24px;
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
+    }
+}
+
+.jkNBxj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 968px) {
+    .jkNBxj {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -39.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .jkNBxj::before {
+        z-index: -1;
+        content: attr(data-content);
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 131px;
+        border-radius: 24px;
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
+    }
+}
+
+.enBcKL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 968px) {
+    .enBcKL {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -54px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .enBcKL::before {
+        z-index: -1;
+        content: attr(data-content);
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 102px;
+        border-radius: 24px;
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
+    }
+}
+
+.ieACox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 968px) {
+    .ieACox {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -21.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .ieACox::before {
+        z-index: -1;
+        content: attr(data-content);
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 167px;
+        border-radius: 24px;
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
+    }
+}
+
+.gDeGgY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid #e7e3eb;
+    background: #fff;
+    box-shadow: 0px 2px 0px 0px #e7e3eb;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 968px) {
+    .gDeGgY {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -47.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .gDeGgY::before {
+        z-index: -1;
+        content: attr(data-content);
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 115px;
+        border-radius: 24px;
+        border: 1px solid #e7e3eb;
+        background: #fff;
+        box-shadow: 0px 2px 0px 0px #e7e3eb;
+    }
+}
+
+
+
+
+
 
 
 
