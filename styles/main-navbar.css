@@ -208,6 +208,10 @@ section.light-theme svg.dark{
     border-radius: 1rem !important;
 }
 
+.chain-menu.dark-theme.dropdown-menu {
+    background-color: var(--bg-dark) !important;
+}
+
 
 
 
