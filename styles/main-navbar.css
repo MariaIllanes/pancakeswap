@@ -536,3 +536,11 @@ section.light-theme svg.dark{
 .more-item.dropdown-divider{
     border-top: 0.1px solid var(--light-text2h2);
 }
+
+/* Setting BTN */
+
+.settings-btn{
+    border: none;
+    appearance: none;
+    background: none;
+}
