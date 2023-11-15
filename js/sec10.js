@@ -55,17 +55,17 @@ const cardData = [
 
 cardData.forEach((data) => {
   const cardHTML = `
-    <div class="card">
+    <div class="card theme-change light-theme">
       <div class="card-img-container">
         <img src="${data.imageSrc}" alt="Image">
       </div>
-      <div class="card-text-container">
-        <div class="text-title-date">
-          <div class="text-title">${data.title}</div>
-          <div class="text-date">${data.date}</div>
+      <div class="card-text-container theme-change light-theme">
+        <div class="text-title-date theme-change light-theme">
+          <div class="text-title theme-change light-theme">${data.title}</div>
+          <div class="text-date theme-change light-theme">${data.date}</div>
         </div>
-        <div class="text-description">${data.description}</div>
-        <div class="text-content">${data.content}</div>
+        <div class="text-description theme-change light-theme">${data.description}</div>
+        <div class="text-content theme-change light-theme">${data.content}</div>
       </div>
     </div>
   `;
