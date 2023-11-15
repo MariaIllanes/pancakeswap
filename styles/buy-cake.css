@@ -22,19 +22,19 @@
     gap: 0;
 }
 
-section.light-theme{
+.buy-cake.light-theme{
     background-color: var(--bg-light);
 }
 
-section.dark-theme h1{
+.buy-cake.dark-theme h1{
     color: var(--dark-text3h1);
 }
 
-section.dark-theme{
+.buy-cake.dark-theme{
     background-color: var(--bg-dark);
 }
 
-section.dark-theme h1{
+.buy-cake.dark-theme h1{
     color: var(--dark-text3h1);
 }
     
@@ -59,3 +59,4 @@ section.dark-theme h1{
 .color-change{
     color: #7745d8;
 }
+
