@@ -1,0 +1,109 @@
+.exchange-stats2{
+    width: 100%;
+}
+
+.exchange-stats2.light-theme{
+    background-color: var(--bg-light);
+}
+
+.exchange-stats2.dark-theme{
+    background-color: var(--bg-dark);
+}
+
+#exchange-figures,
+.exchange-counters{
+    color: var(--light-text2h2);
+    font-weight: bold;
+}
+
+.exchange-statistics-container hr{
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    margin: 25px 0;
+}
+
+.exchange-titles{
+    font-weight: bold;
+    margin-bottom: 0;
+    color: black;
+}
+
+.exchange-counters{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.exchange-stats2.dark-theme h2{
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+}
+
+.exchange-titles.light-theme p{
+    font-weight: bold;
+    margin-bottom: 0;
+    color: black;
+}
+
+.exchange-statistics-container.dark-theme p:first-child{
+    font-weight: bold;
+    margin-bottom: 0;
+    color: azure;
+}
+
+.exchange-stats2-title{
+    display: flex;
+    justify-content: center;
+}
+
+.exchange-stats2-title span{
+    padding: 0 5px;
+}
+
+.exchange-statistics-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.exchange-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    min-width: 200px;
+}
+
+@media (max-width: 967px){
+    .exchange-info-container{
+        min-width: 200px;
+    }
+
+    .exchange-statistics-container{
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .exchange-statistics-container hr:nth-child(6){
+        display: none;
+    }
+}
+
+@media (max-width: 683px){
+    .exchange-statistics-container hr{
+        display: none;
+    }
+
+    .exchange-statistics-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .exchange-counters{
+        font-size: 1.3rem;
+    }
+    
+}
