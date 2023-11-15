@@ -45,10 +45,18 @@ body {
     transition: transform 0.5s; /* Duración de la animación de reducción de tamaño */
 }
 
-.other-element-button svg {
+.other-element-button.light-theme svg {
     align-self: center;
     fill: #fff;
     color: #fff;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+
+.other-element-button.dark-theme svg {
+    align-self: center;
+    fill: rgb(0, 0, 0)000;
+    color: #000000;
     flex-shrink: 0;
     margin-left: 0.5rem;
 }
