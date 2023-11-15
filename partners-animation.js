@@ -42,7 +42,7 @@ function applyStyles() {
       element.style.setProperty("--transform", "rotate(-90deg)");
     });
     marquees.forEach((element) => {
-      element.style.setProperty("--duration", "8.32s");
+      element.style.setProperty("--duration", "5.2s");
     });
   }
 }
