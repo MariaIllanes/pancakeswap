@@ -1,4 +1,4 @@
-body img {
+.news img {
     height: auto;
     max-width: 100%;
 }
@@ -15,7 +15,7 @@ body img {
     gap: 8px;
 }
 
-.featured {
+.featured.light-theme {
     color: #280d5f;
     line-height: 1.5;
     font-size: 40px;
@@ -23,8 +23,24 @@ body img {
     text-align: center;
 }
 
-.news- {
+.featured.dark-theme {
+    color: #f4eeff;
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.news-.light-theme {
     color: #7645d9;
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.news-.dark-theme {
+    color: #9a6aff;
     line-height: 1.5;
     font-size: 40px;
     font-weight: 600;
