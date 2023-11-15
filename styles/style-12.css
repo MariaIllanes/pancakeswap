@@ -2,13 +2,15 @@
     margin: 0 5%;
 }
 
-.footer-container {
+
+.main-footer{
     background-color: #27262c;
     color:  #f4eeff;
     padding: 56px 40px 32px;    
     width: 100%;
     font-size: 1rem;
-    /* overflow: show; */
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-links-container {
@@ -77,7 +79,7 @@
     align-items: center;
     text-decoration: none;
     padding: 30px 40px 0 0;  
-    margin: 0 5%;
+    margin: 0 0 0 5%;
 }
 
 .footer-buttons a:visited{
@@ -89,6 +91,7 @@
     display: flex;
     gap: 20px;
     align-content: center;
+    align-items: center;
 }
 
 #footer-mini-logo-img{
@@ -107,9 +110,10 @@
 
 
 #footer-dollar-link{
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0;
+    /* padding: 5px 0; */
 } 
 
 #footer-dollar-link a{
@@ -330,6 +334,10 @@
  }
 /* toogle button end */
 
+#footer-separator2{
+    display: none;
+}
+
 
 
 
@@ -368,5 +376,52 @@
 
     #footer-pancakeswap-logo {
         display: inline;
+    }
+}
+
+
+
+@media (max-width: 584px){
+    .social-media-logo{
+        padding: 0 10px 0 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-buttons{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0 0 0 15px;
+        margin: 0;
+    }
+
+    .footer-rigth{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+
+    #footer-separator{
+        margin-bottom: 50px;
+    }
+
+    .main-footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #footer-separator2{
+        display: block;
+        border-color: #69686a;
+        display: block;
+        margin: 5% 0 0 3%;
+        width: 95%;
     }
 }
