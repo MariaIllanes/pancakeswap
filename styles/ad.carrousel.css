@@ -159,7 +159,7 @@ section.dark-theme{
 
 }
 
-#card1{
+#card1,#card2{
     display: none;
 }
 
@@ -215,6 +215,61 @@ section.dark-theme{
     padding: 0rem 1rem 1rem 0rem;
 }
 
-.CTA button:hover {
+.CTA2 button:hover {
+    opacity: 40%;
+}
+
+/* Card3 */
+
+
+.card3AC{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        background-color: lightblue;
+        padding: 1.5rem;
+        padding-bottom: 0;
+        border-radius: 2rem;
+        justify-content: space-between;
+}
+
+
+.titleAC3{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #7a6cab;
+    margin-top: 0rem;
+}
+
+.titleAC3 h3{
+    margin: 0;
+}
+
+.subtitleAC3 {
+    color: peachpuff;
+    text-shadow: 2px 2px purple;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.subtitleAC3 h4{
+    margin-top: 1rem;
+}
+
+
+.caroussel-img {
+    position: relative;
+}
+
+.CTA3 button{
+    background: none;
+    color: white;
+    padding: 0rem 1rem 1rem 0rem;
+}
+
+.CTA3 button:hover {
     opacity: 40%;
 }
