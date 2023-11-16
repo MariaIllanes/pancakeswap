@@ -54,13 +54,13 @@ const ecosystemTradeContainer = document.querySelector(".trade-cards-container")
     tradeCard.innerHTML = `
       
        <a href=${data.tradeURL} class="trade">
-        <div class="card">
+        <div class="trade-card">
           <div class="trade-img">
             <img src="${data.tradeimageSrc}" data-hover-image="${data.tradeHoveredImage}">
           </div>
           <h4>${data.tradeTitle}</h4>
           <p class="ecosystem-description">${data.tradeDescription}</p>
-          <p class="ecosystem-link">${data.tradeLink}</p>
+          <p class="ecosystem-link theme-change light-theme">${data.tradeLink}</p>
        </div>
       </a>
     `;
@@ -128,13 +128,13 @@ earnCardData.forEach((data) => {
 
   earnCard.innerHTML = `
     <a href="${data.earnURL}" class="trade">
-      <div id="earn-container">
+      <div class="earn-card" id="earn-container">
         <div class="trade-img">
           <img src="${data.earnimageSrc}" data-hover-image="${data.earnHoveredImage}">
         </div>
         <h4>${data.earnTitle}</h4>
         <p class="ecosystem-description">${data.earnDescription}</p>
-        <p class="ecosystem-link">${data.earnLink}</p>
+        <p class="ecosystem-link theme-change light-theme">${data.earnLink}</p>
       </div>
     </a>
     
@@ -215,13 +215,13 @@ gamesNFTCardData.forEach((data) => {
   gamesNFTCard.innerHTML = `
 
     <a href="${data.gameURL}">
-      <div class="trade">
+      <div class="gamenft-card">
         <div class="trade-img">
           <img src="${data.gamesNFTimageSrc}" data-hover-image="${data.gamesNFTHoveredImage}">
         </div>
         <h4>${data.gamesNFTTitle}</h4>
         <p class="ecosystem-description">${data.gamesNFTDescription}</p>
-        <p class="ecosystem-link">${data.gamesNFTLink}</p>
+        <p class="ecosystem-link theme-change light-theme">${data.gamesNFTLink}</p>
       </div>
     </a>
   `;
