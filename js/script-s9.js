@@ -1,8 +1,7 @@
 
 
-let slideCommunityIndex = 1; // Current slide index
+let slideCommunityIndex = 1; 
 
-// Function to show a specific slide
 function showCommunityCard(index) {
     const communitySlides = document.querySelectorAll('.community-card-slide');
     const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');
@@ -19,7 +18,6 @@ function showCommunityCard(index) {
     slideCommunityIndex = index;
 }
 
-// change slide every 4 seconds
 function communityAutoShow() {
     const communitySlides = document.querySelectorAll('.community-card-slide');
     const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');

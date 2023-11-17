@@ -5,9 +5,11 @@
     --purpleTweet: #b8add2;
     --communityInactiveButton: rgba(122, 110, 170, 0.7);
     --communityActiveButton: rgb(118, 69, 217);
+    --bg-light-blue: #72b8f2;
+    --bg-lightest-blue: #99b8c8;
 }
 
-#community-triangle{
+#community-triangle.dark-theme{
     width: 100%;
     height: 60px;
     background: rgb(131,0,139);
@@ -16,6 +18,15 @@
     background: linear-gradient(01deg,  transparent, #0b4574, black);
 }
 
+#community-triangle.light-theme{
+    width: 100wv;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(01deg,  transparent, var(--bg-light-blue), var(--btn-light-text));
+}
+
+
 .color-change{
     color: #7745d8;
 }
@@ -23,25 +34,60 @@
 
 .community.dark-theme{
     background: linear-gradient(#0b4574, #081116);
-    height: 880px;
+    height: 780px;
+}
+
+.community.light-theme{
+    background: linear-gradient(var(--bg-light-blue), var(--bg-lightest-blue));
+    height: 780px;
 }
 
 body{
     margin: 0
 }
 
-.community-container{
+.community-container.dark-theme{
     width: 900px;
+    height: auto;
     margin: auto;
-    background-color: #020810;
-    color: white;
+    background-color: var(--bg-dark);
+    color: var(--btn-light-text);
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 45px;
-    
+    opacity: 0.9;
+}
+
+.community-container.light-theme{
+    width: 900px;
+    height: auto;
+    margin: auto;
+    background-color: #e7e3eb;
+    color: var(--btn-dark-text);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem;
+    border-radius: 45px;
+    opacity: 0.99;
+}
+
+.community-container h2{
+    margin-bottom: 0;
+}
+
+.community-container h3{
+    margin: 0;
+    font-weight: bold;
+}
+
+.community-sm{
+    width: 30px;
+    height: 30px;
 }
 
 .community-cards{
@@ -58,9 +104,16 @@ body{
     background-color: #7745d8;
 }
 
-#community-card2{
+
+
+#community-card2.dark-theme{
     background-color: var(--backgroundDarkGrey);
     border: 1px solid var(--greyBorder);
+}
+
+#community-card2.light-theme{
+    background-color: var(--bg-light);
+    border: 1px solid var(--purpleTweet);
 }
 
 
@@ -69,6 +122,12 @@ body{
     font-weight: bold;
     color:var(--mustardyellow);
     margin: 0 0 20px;
+}
+
+#community-card1.light-theme p:nth-child(1),
+#community-card1.light-theme p:nth-child(3),
+#community-card1.light-theme p:nth-child(5){
+    color:white;
 }
 
 #community-card1{
@@ -103,11 +162,6 @@ body{
     text-align: left;
     font-size: 14px;
 }
-
-/* #community-tweet-user p:nth-child(1){
-    width: 250px;
-    padding-right: 10px;
-} */
 
 #community-card-slide1 a,
 #community-card-slide1 a:visited{
@@ -155,8 +209,9 @@ body{
 
 
 #community-card-img{
-    width: 290px;
+    width: 280px;
 }
+
 
 #community-date{
     color: var(--purpleTweet)
@@ -197,12 +252,31 @@ body{
 
 
 
-.community-sm{
+.community-sm.dark-theme{
     background-color: var(--backgroundDarkGrey);
     border-radius: 30px;
     padding: 10px;
     margin: 0 5px
 }
+
+.community-sm.light-theme{
+    background-color: var(--bg-light);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 5px
+}
+
+
+a:-webkit-any-link{
+    text-decoration: none;
+    color: initial;
+    /*eliminar en caso de interferir con otras secciones  */
+}
+
+
+
+
+
 
 #community-bg-x{
     position: absolute;
@@ -227,3 +301,166 @@ body{
     left: 100px;
     top: 550px;
 }
+
+#community-bg-heart{
+    position: absolute;
+    right: 300px;
+    top: -60px;
+}
+
+#community-bg-bell{
+    position: absolute;
+    right:150px;
+    top: 60px;
+}
+
+#community-bg-comment{
+    position: absolute;
+    right:30px;
+    top: 180px;
+}
+
+#community-bg-speaker{
+    position: absolute;
+    right:30px;
+    top: -100px;
+}
+
+#community-bg-dots{
+    position: absolute;
+    right:20px;
+    top: -100px;
+}
+
+
+@media (max-width: 1300px){
+    #community-bg-x{
+        position: absolute;
+        left: 50px;
+        top: 120px;
+    }
+    
+    #community-bg-tg{
+        position: absolute;
+        left: 80px;
+        top: 250px;
+    }
+    
+    #community-bg-ig{
+        position: absolute;
+        left: 40px;
+        top: 400px;
+    }
+    
+    #community-bg-dis{
+        position: absolute;
+        left: 40px;
+        top: 550px;
+    }
+    
+    #community-bg-heart{
+        position: absolute;
+        right: 200px;
+        top: -60px;
+    }
+    
+    #community-bg-bell{
+        position: absolute;
+        right:30px;
+        top: 60px;
+    }
+    
+    #community-bg-comment{
+        position: absolute;
+        right:10px;
+        top: 120px;
+    }
+    
+    #community-bg-speaker{
+        position: absolute;
+        right: 0px;
+        top: -100px;
+    }
+    
+    #community-bg-dots{
+        position: absolute;
+        right:0px;
+        top: -100px;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .community-container.dark-theme,
+    .community-container.light-theme{
+        width: 92%;
+    }
+    
+
+    #community-bg-x,
+    #community-bg-tg,
+    #community-bg-ig,    
+    #community-bg-dis{
+       display: none;
+    }
+
+    #community-bg-bell{
+        position: absolute;
+        left:30px;
+        top: 600px;
+    }
+}
+
+@media (max-width: 900px) {
+    .community-container{
+        width: 92%;
+    }
+}
+
+@media (max-width: 700px){
+   .community.light-theme,
+   .community.dark-theme{
+    width: auto;
+    height: 1150px;
+   }
+
+    .community-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .community-sm-container{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .community.dark-theme{
+        background: linear-gradient(#0b4574, #081116);
+        height: 1180px;
+    }
+
+    .community.ligth-theme{
+        background: linear-gradient(rgb(95, 116, 11), #081116);
+        height: 1180px;
+    } */
+
+    #community-bg-bell{
+        position: absolute;
+        left:30px;
+        top: 980px;
+    }
+}
+
+
+@media (max-width: 430px){
+    .community-sm{
+        width: 20px;
+        height: 20px;
+    }
+
+    .community-container h3{
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+}
+
