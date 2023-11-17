@@ -1,17 +1,38 @@
-const toggleCheckbox = document.getElementById('toggleCheckbox');
-        const footerContainer = document.querySelector('.footer-container, .exchange-stats2-container'); //añadir aqui las clases de las secciones que se ven afectadas y quitar .footer-container. concretar colores
+// const toggleCheckbox = document.getElementById('toggleCheckbox');
+//         const footerContainer = document.querySelector('.footer-container, .exchange-stats2-container'); //añadir aqui las clases de las secciones que se ven afectadas y quitar .footer-container. concretar colores
 
-        toggleCheckbox.addEventListener('change', function () {
-            if (toggleCheckbox.checked) {
-                footerContainer.style.backgroundColor = '#27262c';
-                footerContainer.style.color = '#ccc';
+//         toggleCheckbox.addEventListener('change', function () {
+//             if (toggleCheckbox.checked) {
+//                 footerContainer.style.backgroundColor = '#27262c';
+//                 footerContainer.style.color = '#ccc';
 
-            } else {
-                footerContainer.style.backgroundColor = '#ccc';
-                footerContainer.style.color = '#27262c';
-            }
-        });
+//             } else {
+//                 footerContainer.style.backgroundColor = '#ccc';
+//                 footerContainer.style.color = '#27262c';
+//             }
+//         });
 
+
+
+const selectLanguageLabel = document.getElementById('select-language-label');
+const hiddenLanguageMenu = document.getElementById('hidden-language-menu');
+
+// Toggle the visibility of the hidden menu on label click or hover
+selectLanguageLabel.addEventListener('mouseenter', () => {
+    hiddenLanguageMenu.style.display = 'block';
+});
+
+selectLanguageLabel.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+});
+
+document.addEventListener('click', () => {
+    hiddenLanguageMenu.style.display = 'none';
+});
+
+hiddenLanguageMenu.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent the click inside the menu from closing it
+});
 
 
 
