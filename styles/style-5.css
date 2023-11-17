@@ -13,15 +13,28 @@
   --colors-dark-gradient: linear-gradient(139.73deg,#313d5c,#3d2a54);
 }
 
-#triangle-div{
-  width: 100vw;
+
+html,
+body{
+  width: 100%;
+}
+
+#ecosystem-triangle.light-theme{
+  width: 100%;
   height: 40px;
   background: linear-gradient(1deg,  transparent, var(--greybackground), var(--purple));
   position: absolute;  
 }
 
+#ecosystem-triangle.dark-theme{
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(1deg,  transparent, var(--btn-dark-text), var(--backgroundpurple));
+  position: absolute;  
+}
+
 /* general section css */
-.ecosystem.light-theme{
+.ecosystem{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,6 +42,8 @@
   flex-wrap: wrap;
   background: var(--greybackground);
 }
+
+
 
 #ecosystem-section-logo{
   margin: 80px 0 0 0;
@@ -72,6 +87,9 @@
 .ecosystem-card-container:nth-child(2){
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 
@@ -80,23 +98,16 @@
 .gamenft-cards-container{
     display: inline-flex;
     width: auto;
-    justify-content: space-evenly;
-    position: relative;
-    left: -60px;
+    justify-content: space-evenly;   
     display: grid;
-    grid-template-columns: repeat(5, 220px);
-    gap: 10px;
+    grid-template-columns: repeat(5, 200px);
 }
 
 .earn-cards-container{
   display: grid;
-  grid-template-columns: repeat(4, 280px);
+  grid-template-columns: repeat(4, 230px);
+  gap: 20px;
   
-}
-
-
-#trade-container.trade{
-  width: 140px;
 }
 
 
@@ -106,7 +117,6 @@
   height: auto;
   display: flex;  
   position: relative;
-  left: -20px;
 }
 
 #gamesnft-img{
@@ -114,7 +124,6 @@
   height: auto;
   display: flex;  
   position: relative;
-  left: -50px;
 }
 
 #earn-img{
@@ -122,7 +131,6 @@
   height: auto;
   display: flex;  
   position: relative;
-  right: -60px;
 }
 
 
@@ -136,7 +144,7 @@
 
 
 .trade-card-container-all:nth-child(2){
-  margin: 0 0 0 100px;
+  margin: 0 0 0 50px;
 }
 
 
@@ -144,6 +152,7 @@
 .trade-card-container-all h3{
   font-size: 2rem;
   color: var(--purple);
+  margin: 20px 0 20px 40px;
   
 }
 
@@ -160,10 +169,6 @@
   margin: 15px;
 }
 
-.trade-img{
-  display: flex;
-  justify-content: center;
-}
 
 .ecosystem-card-container a{
   text-decoration: none;
@@ -185,6 +190,14 @@
   background: var(--btn-dark-text);
 }
 
+.ecosystem-card-container.dark-theme:nth-child(2){
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
 .ecosystem.dark-theme h2,
 .trade-cards-container.dark-theme h4,
 .earn-cards-container.dark-theme h4,
@@ -196,15 +209,14 @@
 }
 
 .ecosystem-card-container.dark-theme{
-  background-color: var(--darkblue);
+  background: rgb(4,31,69);
+  background: linear-gradient(216deg, rgb(0, 20, 47) 0%, rgb(49, 25, 82) 100%);
   border-radius: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0px;
-  gap: 50px;
   padding: 0 0 30px 0;
-  height: 500px;
 }
 
 .ecosystem-link.dark-theme{
@@ -218,7 +230,7 @@
 
 
 
-@media (max-width: 1208px){
+@media (max-width: 1350px){
   .trade-cards-container,
   .gamenft-cards-container {
     display: grid;
@@ -239,37 +251,54 @@
     bottom: -30px;
   }
 
-  
-
   .ecosystem-container{
+    width: 100%;
+  }
+
+  .ecosystem-card-container.dark-theme,
+  .ecosystem-card-container.light-theme{
+    width: 100%;
     gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
-  .trade-card-container-all:nth-child(2){
-    margin: 0 0 0 -80px;
+  .ecosystem-card-container.dark-theme:nth-child(2),
+  .ecosystem-card-container.light-theme:nth-child(2){
+    width: 100%;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
-.ecosystem-card-container{
-    width: 90px;
+  #trade-img{
+    position: relative;
+    left: -50px;
   }
   
   
 }
 
 
-@media (max-width: 967px) {
-  .ecosystem-card-container{
+@media (max-width: 1100px) {
+  .ecosystem-card-container.dark-theme,
+  .ecosystem-card-container.light-theme{
     display: flex;
     flex-direction: row;
     align-items: center;
     height: auto;
     width: 100%;
+    gap: 0px;
   }
 
   .trade-cards-container,
   .gamenft-cards-container{
     display: grid;
-    grid-template-columns: repeat(3, 230px);
+    grid-template-columns: repeat(3, 190px);
+    height: fit-content;
+    gap: 5px;
   }
 
   .earn-cards-container{
@@ -278,14 +307,14 @@
   }
 
   .trade-card-container-all h3{
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   .ecosystem-big-img{
-    width: 350px;
+    width: 300px;
     height: 400px;
     position: relative;
-    left: -230px;
+    left: -30px;
     bottom: -30px;
   }
 
@@ -297,12 +326,14 @@
 }
 
 
-@media (max-width: 851px){
-  .ecosystem-card-container{
-    width: 95vw;
+@media (max-width: 880px){
+  .ecosystem-card-container.light-theme,
+  .ecosystem-card-container.dark-theme{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   .ecosystem-container h3{
@@ -320,7 +351,7 @@
   .gamenft-cards-container{
     display:flex;
     flex-wrap: wrap;
-    margin: 0 0 0 100px;
+    justify-content: space-evenly;
   }
 
 
@@ -329,13 +360,9 @@
   .gamenft-card-container-all h3{
     margin: 30px 0 30px 100px;
   }
-  /* .trade-card-container-all{
-    margin: 50px;
-  } */
-
+ 
   .trade-card,
   .gamenft-card{
-    min-width: 180px;
     max-width: 210px;
     font-size: 1.5rem;
   }
@@ -344,26 +371,6 @@
     max-width: 250px;
     font-size: 1.5rem;
   }
-
-
-
-   .ecosystem-card-container:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-/*
-  .trade-cards-container,
-  .gamenft-cards-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-
-  .trade-card-container-all h3:nth-child(1),
-  .trade-card-container-all h3:nth-child(3){
-    margin: 50px;
-  } */
 
   #gamesnft-img,
   #trade-img{
@@ -378,32 +385,51 @@
     height: auto;
     position: relative;
     left: -250px;
+    
   }
   
 }
 
 
-@media (max-width: 537px){
+@media (max-width: 574px){
   .ecosystem-card-container{
     width: 100%;
   }
 
-  .earn-card,
-  .trade-card,
-  .gamenft-card{
+  .earn-card p,
+  .trade-card p,
+  .gamenft-card p{
     font-size: 1rem;
     max-width: 160px;
-    margin: 10px;
+  }
+
+  .trade h4{
+    font-size: 1.2rem;
+  }
+
+  #trade-img.ecosystem-big-img,
+  #earn-img.ecosystem-big-img,
+  #gamesnft-img.ecosystem-big-img{
+    width: 250px;
   }
 
   #earn-img.ecosystem-big-img{
     position: relative;
-    left: -10px;
+    left: -80px;
   }
 
-  #gamesnft-img.ecosystem-big-img{
-    position: relative;
-    left: -80px;
+  .ecosystem-gamenft-card{
+    height: 370px;
+    width: auto;
+
+  }
+
+  .ecosystem-original-imgs{
+    display: none;
+  }
+
+  .data-hover-image{
+    display: block;
   }
 
 }
@@ -413,3 +439,5 @@
 
 
 
+/* img hovered shown at -900px;
+js */

@@ -204,9 +204,11 @@ const gamesNFTCardData = [
     gamesNFTDescription: "Trade unique NFTs on BNB Chain",
     gamesNFTLink:"Trade Now >",
   },
-
-
 ];
+
+function gamesNFTSmallScreen() {
+  return window.innerWidth < 900;
+}
 
 gamesNFTCardData.forEach((data) => {
   const gamesNFTCard = document.createElement('div');
@@ -217,7 +219,7 @@ gamesNFTCardData.forEach((data) => {
     <a href="${data.gameURL}">
       <div class="gamenft-card">
         <div class="trade-img">
-          <img src="${data.gamesNFTimageSrc}" data-hover-image="${data.gamesNFTHoveredImage}">
+          <img class="ecosystem-original-imgs" src="${data.gamesNFTimageSrc}" data-hover-image="${data.gamesNFTHoveredImage}">
         </div>
         <h4>${data.gamesNFTTitle}</h4>
         <p class="ecosystem-description">${data.gamesNFTDescription}</p>
