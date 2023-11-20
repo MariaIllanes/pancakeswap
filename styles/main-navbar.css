@@ -39,7 +39,7 @@
     display: none;
 }
 
-section.light-theme svg.dark{
+.main-navbar.light-theme svg.dark{
     display: none;
 }
 
