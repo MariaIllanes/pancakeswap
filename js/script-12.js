@@ -14,82 +14,42 @@
 
 
 
-const selectLanguageLabel = document.getElementById('select-language-label');
-const hiddenLanguageMenu = document.getElementById('hidden-language-menu');
 
-// Toggle the visibility of the hidden menu on label click or hover
-selectLanguageLabel.addEventListener('mouseenter', () => {
-    hiddenLanguageMenu.style.display = 'block';
+
+const svgElement = document.getElementById('logo-telegram');
+const customOptions = document.getElementById('telegram-language-options');
+let menuVisible = false;
+
+svgElement.addEventListener('mouseenter', function() {
+    customOptions.style.display = 'block';
+    menuVisible = true;
 });
 
-selectLanguageLabel.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent the click from propagating to the document
+customOptions.addEventListener('mouseleave', function() {
+    menuVisible = false;
+    setTimeout(() => {
+        if (!menuVisible) {
+            customOptions.style.display = 'none';
+        }
+    }, 1000);
 });
 
-document.addEventListener('click', () => {
-    hiddenLanguageMenu.style.display = 'none';
+customOptions.addEventListener('click', function(e) {
+    if (e.target.tagName === 'LI') {
+        const selectedValue = e.target.getAttribute('data-value');
+        location.href = selectedValue; 
+    }
 });
 
-hiddenLanguageMenu.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent the click inside the menu from closing it
+// Hide menu when clicking outside of it
+document.addEventListener('click', function(e) {
+    const isClickInside = svgElement.contains(e.target) || customOptions.contains(e.target);
+    if (!isClickInside) {
+        customOptions.style.display = 'none';
+        menuVisible = false;
+    }
 });
 
-
-
-
-
-
-
-
-
-
-// language select piece of code
-        const selectLanguageIcon = document.getElementById('icon-language', 'select-language-label');
-        const selectLanguage = document.getElementById('hidden-language-menu');
-        
-        let isOpen = false;
-        
-        selectLanguageIcon.addEventListener('click', () => {
-          if (isOpen) {
-            selectLanguage.classList.remove('open');
-          } else {
-            selectLanguage.classList.add('open');
-          }
-          isOpen = !isOpen;
-        });
-        
-        document.addEventListener('click', (event) => {
-          if (!selectLanguage.contains(event.target) && event.target !== selectLanguageIcon) {
-            selectLanguage.classList.remove('open');
-            isOpen = false;
-          }
-        });
-
-
-
-
-        // telegram select piece of code
-
-        const selectTelegramLogo = document.getElementById('logo-telegram');
-        const selectLanguageTelegram = document.getElementById('language-options-telegram');
-        
-        let isOpen2 = false;
-        
-        selectTelegramLogo.addEventListener('click', () => {
-          if (isOpen2) {
-            selectLanguageTelegram.classList.remove('open');
-          } else {
-            selectLanguageTelegram.classList.add('open');
-          }
-          isOpen2 = !isOpen2;
-        });
-        
-        document.addEventListener('click', (event) => {
-          if (!selectLanguageTelegram.contains(event.target) && event.target !== selectIcon) {
-            selectLanguageTelegram.classList.remove('open');
-            isOpen2 = false;
-          }
-        });
 
 
 
