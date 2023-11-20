@@ -1,6 +1,35 @@
+:root{
+    --mustardyellow: #ffb237;
+    --greyBorder: #383241;
+    --backgroundDarkGrey: #27262c;
+    --purpleTweet: #b8add2;
+    --communityInactiveButton: rgba(122, 110, 170, 0.7);
+    --communityActiveButton: #7745d8;
+    --bg-light-blue: #72b8f2;
+    --bg-lightest-blue: #99b8c8;
+}
+
+
 .exchange-stats2{
     width: 100%;
 }
+
+#community-triangle.dark-theme{
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(01deg,  transparent, #0b4574, black);
+}
+
+#community-triangle.light-theme{
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(01deg,  transparent, var(--bg-light-blue), var(--btn-light-text));
+}
+
 
 .exchange-stats2.light-theme{
     background-color: var(--bg-light);
@@ -27,17 +56,25 @@
     font-weight: bold;
     margin-bottom: 0;
     color: black;
+    font-size: 1.5rem;
 }
 
 .exchange-counters{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin: 0;
 }
 
 .exchange-stats2.dark-theme h2{
     font-weight: bold;
     margin-bottom: 0;
-    color: white;
+    color: white; 
+}
+
+.exchange-stats2.light-theme h2{
+    font-weight: bold;
+    margin-bottom: 0;
+    color: black; 
+    font-size: 2.5rem;
 }
 
 .exchange-titles.light-theme p{
@@ -45,6 +82,7 @@
     margin-bottom: 0;
     color: black;
 }
+
 
 .exchange-statistics-container.dark-theme p:first-child{
     font-weight: bold;
@@ -55,6 +93,7 @@
 .exchange-stats2-title{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .exchange-stats2-title span{
@@ -65,6 +104,7 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    padding: 0 0 50px 0;
 }
 
 .exchange-info-container{
@@ -75,7 +115,7 @@
     min-width: 200px;
 }
 
-@media (max-width: 967px){
+@media (max-width: 1199px){
     .exchange-info-container{
         min-width: 200px;
     }
@@ -85,10 +125,10 @@
         padding: 10px 20px;
     }
 
-    .exchange-statistics-container hr:nth-child(6){
-        display: none;
-    }
+   
 }
+
+
 
 @media (max-width: 683px){
     .exchange-statistics-container hr{
