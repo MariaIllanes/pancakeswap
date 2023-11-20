@@ -1,5 +1,5 @@
 /* borrar */
-.footer-banner{
+/* .footer-banner{
   background-image: url(../assets/footer-banner/footer-banner-bg.png);
     height: 600px;
     display: flex;
@@ -7,7 +7,8 @@
     align-content: center;
     justify-content: center;
     width: 100%;
-}
+    position: relative;
+} */
 
 .footer-banner-text{
   display: flex;
@@ -83,7 +84,17 @@
   display: none;
   position: absolute;
   top: 40px;
+}
 
+.footer-banner{
+  background-image: url(../assets/footer-banner/footer-banner-bg.png);
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
 }
 /* css tabs and container ----------------------------------------------------------------------------------*/
 :root {

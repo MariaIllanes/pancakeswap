@@ -28,47 +28,53 @@ document.addEventListener("click", (event) => {
 
 
 // carousel code
-let slideIndex = 1; 
-function showCard(index) {
-  const slides = document.querySelectorAll('.card-slide');
-  const buttons = document.querySelectorAll('.slideshow-buttons button');
-
-  slides.forEach(slide => {
-    slide.style.display = 'none';
-  });
-  buttons.forEach(button => {
-    button.classList.remove('active');
-  });
-
-  slides[index - 1].style.display = 'block';
-  buttons[index - 1].classList.add('active');
-}
-
-
-
-function autoShow() {
+// Code 1
+(function() {
+  let slideIndex = 1;
+  window.showCard = function(index) {
     const slides = document.querySelectorAll('.card-slide');
     const buttons = document.querySelectorAll('.slideshow-buttons button');
 
     slides.forEach(slide => {
-        slide.style.display = 'none';
+      slide.style.display = 'none';
     });
     buttons.forEach(button => {
-        button.classList.remove('active');
+      button.classList.remove('active');
+    });
+
+    slides[index - 1].style.display = 'block';
+    buttons[index - 1].classList.add('active');
+  };
+
+  showCard(1);
+})();
+
+// Code 2
+(function() {
+  let slideIndex = 1;
+  window.autoShow = function() {
+    const slides = document.querySelectorAll('.card-slide');
+    const buttons = document.querySelectorAll('.slideshow-buttons button');
+
+    slides.forEach(slide => {
+      slide.style.display = 'none';
+    });
+    buttons.forEach(button => {
+      button.classList.remove('active');
     });
 
     slideIndex++;
     if (slideIndex > slides.length) {
-        slideIndex = 1;
+      slideIndex = 1;
     }
 
     slides[slideIndex - 1].style.display = 'block';
     buttons[slideIndex - 1].classList.add('active');
-}
+  };
 
-showCard(1);
+  setInterval(window.autoShow, 6000);
+})();
 
-setInterval(autoShow, 6000);
 
 
 

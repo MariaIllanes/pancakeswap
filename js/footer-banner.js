@@ -1,34 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/footer-banner.css">
-    <title>Home | PancakeSwap</title>
-</head>
-<body>
-    <section class="main-navbar"></section>
-    <section class="dialog-modal"></section>
-    <section class="alt-navbar"></section>
-    <section class="ad-carrousel"></section>
-    <section class="main-banner"></section>
-    <section class="exchange-stats"></section>
-    <section class="buy-cake"></section>
-    <section class="ecosystem">
-        <section class="trade"></section>
-        <section class="earn"></section>
-        <section class="game-NFT"></section>
-    </section>
-    <section class="partners-animation"></section>
-    <section class="exchange-stats2"></section>
-    <section class="community"></section>
-    <section class="news"></section>
-    <div class="theme-change dark-theme" id="isDark"></div>
-    <section class="footer-banner" id="footer-banner">
+export const footerBannerDocComponent = () => {
+    const newElement = document.createElement('section');
+
+    newElement.className = "footer-banner theme-change light-theme";
+    newElement.innerHTML = `
+       
         <div id="footer-banner-visible-section">
 
             <img src="assets/footer-banner/bf-rock1.webp" width="120" height="120" alt="animation" class="footer-banner-img" id="footer-banner1">
@@ -200,23 +175,9 @@
             </div>
     
         </div>
-        
-        
-        
-
-
-
-
-
-
-
-
-
-    </section>
-    <section class="main-footer"></section>
-    <section class="secondary-footer"></section>
-    <script src="js/script-for-s11.js"></script>
-    <script src="js/themchange.js"></script>
     
-</body>
-</html>
+    `
+
+
+    document.getElementById('footer-banner').appendChild(newElement)
+}
