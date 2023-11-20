@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/community.css">
-</head>
-<body>
-    <div class="theme-change dark-theme" id="isDark"></div>
-    <section class="community theme-change light-theme">
-        <!-- <div class="theme-change light-theme" id="community-triangle"></div>
+export const communityDocComponents = () => {
+    const newElement = document.createElement("section");
+
+    newElement.className = "community theme-change light-theme";
+    newElement.innerHTML = `
+    <div class="theme-change light-theme" id="community-triangle"></div>
         <img src="assets/community/community-x.png" alt="" width="300" height="300" class="community-bg-img left" id="community-bg-x">
         <img src="assets/community/community-telegram.png" alt="" width="290" height="290" class="community-bg-img left" id="community-bg-tg">
         <img src="assets/community/community-instagram.png" alt="" width="290" height="290" class="community-bg-img left" id="community-bg-ig">
         <img src="assets/community/community-discord.png" alt="" width="250" height="250" class="community-bg-img left" id="community-bg-dis">
-
-
-
         <img src="assets/community/community-heart.png" alt="" width="80" height="80" class="community-bg-img right" id="community-bg-heart">
         <img src="assets/community/community-bell.png" alt="" width="270" height="270" class="community-bg-img right" id="community-bg-bell">
         <img src="assets/community/community-comment.png" alt="" width="180" height="180" class="community-bg-img right" id="community-bg-comment">
@@ -154,10 +144,9 @@
                     </a> 
                 </div>
             </div>
-        </div> -->
-        
-    </section>
-    <script src="js/themchange.js"></script>
-    <script src="js/script-for-s9.js></script>
-</body>
-</html>
+        </div>
+    `
+
+
+    document.getElementById("community").appendChild(newElement)
+}
