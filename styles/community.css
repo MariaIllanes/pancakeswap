@@ -9,24 +9,6 @@
     --bg-lightest-blue: #99b8c8;
 }
 
-#community-triangle.dark-theme{
-    width: 100%;
-    height: 60px;
-    background: rgb(131,0,139);
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(01deg,  transparent, #0b4574, black);
-}
-
-#community-triangle.light-theme{
-    width: 100wv;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(01deg,  transparent, var(--bg-light-blue), var(--btn-light-text));
-}
-
-
 .color-change{
     color: #7745d8;
 }
@@ -34,12 +16,18 @@
 
 .community.dark-theme{
     background: linear-gradient(#0b4574, #081116);
-    height: 780px;
+    height: 880px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .community.light-theme{
     background: linear-gradient(var(--bg-light-blue), var(--bg-lightest-blue));
-    height: 780px;
+    height: 880px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 body{
@@ -47,7 +35,7 @@ body{
 }
 
 .community-container.dark-theme{
-    width: 900px;
+    width: 850px;
     height: auto;
     margin: auto;
     background-color: var(--bg-dark);
@@ -58,11 +46,13 @@ body{
     gap: 3rem;
     padding: 1.5rem;
     border-radius: 45px;
+    position: absolute;
+    top: 100px;
     opacity: 0.9;
 }
 
 .community-container.light-theme{
-    width: 900px;
+    width: 850px;
     height: auto;
     margin: auto;
     background-color: #e7e3eb;
@@ -73,7 +63,9 @@ body{
     gap: 3rem;
     padding: 1.5rem;
     border-radius: 45px;
-    opacity: 0.99;
+    position: absolute;
+    top: 100px;
+    opacity: 0.9;
 }
 
 .community-container h2{
@@ -246,7 +238,7 @@ body{
 }
 
 .community-card-slide h5{
-    margin: 14px 0;
+    margin: 5px 0;
     font-size: 1rem;
 }
 
@@ -280,117 +272,88 @@ a:-webkit-any-link{
 
 #community-bg-x{
     position: absolute;
-    left: 100px;
-    top: 120px;
+    left: 220px;
+    top: 80px;
 }
 
 #community-bg-tg{
     position: absolute;
-    left: 220px;
-    top: 250px;
+    left: 300px;
+    top: 220px;
 }
 
 #community-bg-ig{
     position: absolute;
-    left: 150px;
-    top: 400px;
+    left: 220px;
+    top: 350px;
 }
 
 #community-bg-dis{
     position: absolute;
-    left: 100px;
-    top: 550px;
+    left: 180px;
+    top: 500px;
 }
 
 #community-bg-heart{
     position: absolute;
-    right: 300px;
-    top: -60px;
+    right: 480px;
+    top: -80px;
 }
 
 #community-bg-bell{
     position: absolute;
-    right:150px;
-    top: 60px;
+    right: 250px;
+    top: 90px;
 }
 
 #community-bg-comment{
     position: absolute;
-    right:30px;
-    top: 180px;
+    right: 100px;
+    top: 150px;
 }
 
 #community-bg-speaker{
     position: absolute;
-    right:30px;
+    right: 160px;
     top: -100px;
 }
 
 #community-bg-dots{
     position: absolute;
-    right:20px;
-    top: -100px;
+    right: 40px;
+    top: -60px;
 }
 
 
 @media (max-width: 1300px){
     #community-bg-x{
         position: absolute;
-        left: 50px;
-        top: 120px;
+        left: 40px;
+        top: 80px;
     }
     
     #community-bg-tg{
         position: absolute;
-        left: 80px;
-        top: 250px;
+        left: 50px;
+        top: 210px;
     }
     
     #community-bg-ig{
         position: absolute;
-        left: 40px;
-        top: 400px;
+        left: -10px;
+        top: 350px;
     }
     
     #community-bg-dis{
         position: absolute;
-        left: 40px;
-        top: 550px;
+        left: -30px;
+        top: 500px;
     }
     
-    #community-bg-heart{
-        position: absolute;
-        right: 200px;
-        top: -60px;
-    }
-    
-    #community-bg-bell{
-        position: absolute;
-        right:30px;
-        top: 60px;
-    }
-    
-    #community-bg-comment{
-        position: absolute;
-        right:10px;
-        top: 120px;
-    }
-    
-    #community-bg-speaker{
-        position: absolute;
-        right: 0px;
-        top: -100px;
-    }
-    
-    #community-bg-dots{
-        position: absolute;
-        right:0px;
-        top: -100px;
-    }
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     .community-container.dark-theme,
     .community-container.light-theme{
         width: 92%;
@@ -408,6 +371,31 @@ a:-webkit-any-link{
         position: absolute;
         left:30px;
         top: 600px;
+    }
+
+
+    #community-bg-heart{
+        position: relative;
+        left: 180px;
+        top: -60px;
+    }
+    
+    #community-bg-comment{
+        position: relative;
+        left: 350px;
+        top: 0px;
+    }
+    
+    #community-bg-speaker{
+        position: relative;
+        left: -50px;
+        top: -50px;
+    }
+    
+    #community-bg-dots{
+        position: relative;
+        left: -420px;
+        top: 0px;
     }
 }
 

@@ -3,9 +3,8 @@ export const communityDocComponents = () => {
 
     newElement.className = "community theme-change light-theme";
     newElement.innerHTML = `
-    <div class="theme-change light-theme" id="community-triangle"></div>
-        <img src="assets/community/community-x.png" alt="" width="300" height="300" class="community-bg-img left" id="community-bg-x">
-        <img src="assets/community/community-telegram.png" alt="" width="290" height="290" class="community-bg-img left" id="community-bg-tg">
+        <img src="assets/community/community-x.png" alt="" width="280" height="280" class="community-bg-img left" id="community-bg-x">
+        <img src="assets/community/community-telegram.png" alt="" width="260" height="260" class="community-bg-img left" id="community-bg-tg">
         <img src="assets/community/community-instagram.png" alt="" width="290" height="290" class="community-bg-img left" id="community-bg-ig">
         <img src="assets/community/community-discord.png" alt="" width="250" height="250" class="community-bg-img left" id="community-bg-dis">
         <img src="assets/community/community-heart.png" alt="" width="80" height="80" class="community-bg-img right" id="community-bg-heart">
