@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+export const themeChange = () => {document.addEventListener('DOMContentLoaded', function() {
     const themeChangeElements = document.querySelectorAll('.theme-change');
     const button = document.getElementById('main');
     const darkCheck = document.getElementById('isDark');
@@ -18,3 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+}
+
+
