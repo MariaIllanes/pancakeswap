@@ -81,6 +81,7 @@ section.dark-theme{
 /* Card IMGs */
 @media (min-width: 1005px) {
 
+    /* Card 1 */
     #base-bunny1 {
         max-height: 15rem;
         position: absolute; 
@@ -133,6 +134,37 @@ section.dark-theme{
     display: none;
 }
 
+#base-bunny3 {
+    max-height: 16rem;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-100%); 
+    bottom: 0;
+    z-index: 1;
+} 
+#base-bunny3-alt {
+    display: none;
+}
+
+#bunny-bg3 {
+    max-height: 4.5rem;
+    position: absolute;
+    right: 100%; 
+    top: 0%; 
+    transform: translateY(-305%)translateX(-250%);
+}
+
+#bunny-bg3-2 {
+    max-height: 6rem;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    transform: translateY(0%)translateX(35%);
+    border-radius: 20cm 20cm;
+}
+
+
+
 }
 
 
@@ -160,6 +192,37 @@ section.dark-theme{
         bottom: 0;
         z-index: 1;
     } 
+
+    #base-bunny3{
+        display: none;
+    }
+
+    #base-bunny3-alt {
+        display: block;
+        max-height: 16rem;
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-100%); 
+        bottom: 0;
+        z-index: 1;
+    } 
+    
+    #bunny-bg3 {
+        max-height: 4.5rem;
+        position: absolute;
+        right: 100%; 
+        top: 0%; 
+        transform: translateY(-305%)translateX(-100%);
+    }
+    
+    #bunny-bg3-2 {
+        max-height: 6rem;
+        position: absolute;
+        bottom: 100%;
+        right: 100%;
+        transform: translateY(0%)translateX(35%);
+        border-radius: 20cm 20cm;
+    }
 
 }
 
