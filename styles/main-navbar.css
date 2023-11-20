@@ -66,14 +66,14 @@
     align-items: center;
 }
 
-.dark-theme h2 {
+.menu-list .dark-theme h2 {
     font-size: var(--standar-size);
     color: var(--light-text1h2);
     font-weight: normal;
     margin: 0;
 }
 
-.light-theme h2 {
+.menu-list .light-theme h2 {
     font-size: var(--standar-size);
     color: var(--light-text2h2);
     font-weight: normal;
@@ -253,12 +253,12 @@
         .icon-list {
            font-size: 1rem;
         }
-        .dark-theme h2 {
+        .main-navbar .dark-theme h2 {
             font-size: 0.8rem;
         
         }
         
-        .light-theme h2 {
+        .main-navbar .light-theme h2 {
             font-size: 0.8rem;
         }
 }
@@ -543,4 +543,5 @@
     border: none;
     appearance: none;
     background: none;
+    color: var(--light-text1h1);
 }
