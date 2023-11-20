@@ -65,11 +65,15 @@ section.dark-theme{
     opacity: 40%;
 }
 
-#bunny-logo {
+#bunny-logo,#bunny-logo2 {
     height: 1.5rem;
 }
 
-#bnb-logo {
+#bunny-logo3 {
+    height: 2rem;
+}
+
+#bnb-logo,#bnb-logo2 {
     height: 1.5rem;
 }
 
@@ -159,10 +163,10 @@ section.dark-theme{
 
 }
 
-#card1,#card2{
+ #card1,#card2{
     display: none;
 }
-
+ 
 
 
 /* Card2 */
