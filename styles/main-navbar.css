@@ -89,6 +89,14 @@
     
 }
 
+.menu-icon-list {
+    margin-top: 0rem;
+}
+
+.exchange-number {
+    margin-top: 0.5rem;
+}
+
 .exchange{
     display: flex;
     flex-direction: row;
