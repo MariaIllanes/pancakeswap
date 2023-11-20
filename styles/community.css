@@ -70,6 +70,8 @@ body{
 
 .community-container h2{
     margin-bottom: 0;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .community-container h3{
@@ -113,13 +115,16 @@ body{
     font-size: 2rem;
     font-weight: bold;
     color:var(--mustardyellow);
-    margin: 0 0 20px;
+    margin: 0 0 0px;
 }
+
 
 #community-card1.light-theme p:nth-child(1),
 #community-card1.light-theme p:nth-child(3),
 #community-card1.light-theme p:nth-child(5){
     color:white;
+    margin: 0;
+    font-weight: bold;
 }
 
 #community-card1{
