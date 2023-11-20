@@ -121,7 +121,7 @@ section.dark-theme{
 }
 
 
-#bunny-bg2 {
+#bunny-bg1-2 {
     max-height: 9rem;
     position: absolute; 
     left: 50%; 
@@ -133,6 +133,19 @@ section.dark-theme{
 #bunny-altbg1 {
     display: none;
 }
+
+/* Card 2 */
+#base-bunny2 {
+    max-height: 15rem;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-150%); 
+    bottom: 0;
+    z-index: 1;
+} 
+
+
+/* Card 3 */
 
 #base-bunny3 {
     max-height: 16rem;
@@ -170,7 +183,7 @@ section.dark-theme{
 
 @media (max-width: 1005px) {
     
-    #bunny-bg1,#bunny-cloud1,#bunny-bg2 {
+    #bunny-bg1,#bunny-cloud1,#bunny-bg1-2 {
         display: none;
     }
 
@@ -192,6 +205,19 @@ section.dark-theme{
         bottom: 0;
         z-index: 1;
     } 
+
+    #base-bunny2 {
+        max-height: 13rem;
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-80%); 
+        bottom: 0;
+        z-index: 1;
+    } 
+
+    .card2AC{
+        background-image: url("/assets/Ad-caroussel/card2/alt-bg.webp");
+    }
 
     #base-bunny3{
         display: none;
@@ -226,7 +252,7 @@ section.dark-theme{
 
 }
 
- #card1,#card2{
+ #card1,#card4,#card3{
     display: none;
 }
  
@@ -242,7 +268,7 @@ section.dark-theme{
         margin-left: auto;
         margin-right: auto;
         width: 80%;
-        background: linear-gradient(black,#a7830e) ;
+        background-image: url("/assets/Ad-caroussel/card2/opbnb-bg.webp");
         padding: 1.5rem;
         padding-bottom: 0;
         border-radius: 2rem;
@@ -255,6 +281,7 @@ section.dark-theme{
     font-weight: normal;
     color: #a7830e;
     margin-top: 1rem;
+    margin-bottom: 0;
 }
 
 .titleAC2 h3{
@@ -268,7 +295,7 @@ section.dark-theme{
 }
 
 .subtitleAC2 h4{
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 
@@ -276,10 +303,14 @@ section.dark-theme{
     position: relative;
 }
 
+.CTA2 {
+    padding-bottom: 1rem;
+}
+
 .CTA2 button{
     background: none;
     color: white;
-    padding: 0rem 1rem 1rem 0rem;
+    /* padding: 0rem 1rem 1.5rem 0rem; */
 }
 
 .CTA2 button:hover {
