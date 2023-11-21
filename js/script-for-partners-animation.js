@@ -26,7 +26,7 @@ function applyStyles() {
       element.style.setProperty("--transform", "none");
     });
     marquees.forEach((element) => {
-      element.style.setProperty("--duration", "21.7425s");
+      element.style.setProperty("--duration", "16.88s");
     });
   } else {
     contentSubcontainerOnes.forEach((element) => {
