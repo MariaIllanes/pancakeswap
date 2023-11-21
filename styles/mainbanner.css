@@ -5,26 +5,26 @@
 
 }
 
-.main-banner{
-    display: flex;
-    flex-direction: column;
-}
 
-.main-banner.light-theme {
+.main-banner {
     background-color: #edf6fe;
 }
 
+<<<<<<< HEAD
+.mbcontainer {
+=======
 .main-banner.dark-theme {
     background-color: #1e1935;
 }
 
 
 .main-banner .mbcontainer {
+>>>>>>> main
     width: 90%;
     margin-left: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    gap: 6rem;
 }
 
 .main-banner .mbimg{
@@ -37,6 +37,24 @@
     line-height: 110%;
     max-width: 33rem;
     margin: 0;
+<<<<<<< HEAD
+    padding-top: 6rem;
+}
+
+.text-container h2{
+    max-width: 31rem;
+    color: var(--lighth2);
+    line-height: 110%;
+}
+
+.textcolour1 {
+    color: #290e5e;
+}
+
+.textcolour2 {
+    color: #7744d9;
+}
+=======
     font-weight: bold;
 }
 
@@ -115,3 +133,4 @@
 }
 
 
+>>>>>>> main
