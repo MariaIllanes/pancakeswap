@@ -1,14 +1,4 @@
 
-.partners-animation-container.dark-theme{
-    background-color: #08070a;
-}
-
-
-.partners-animation-container.light-theme{
-    background-color: #faf9fa;
-}
-
-
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -71,12 +61,20 @@ div {
     }
 }
 
-.line-one.show {
+.line-one.show.light-theme {
+    transform: scaleY(1);
+}
+
+.line-one.show.dark-theme{
     transform: scaleY(1);
 }
 
 @media screen and (min-width: 968px) {
-    .line-one.show {
+    .line-one.show.light-theme {
+        transform: scaleX(1);
+    }
+
+    .line-one.show.dark-theme {
         transform: scaleX(1);
     }
 }
@@ -84,31 +82,40 @@ div {
 .line-one.light-theme {
     position: absolute;
     height: 128px;
-    width: 5px;
+    width: 1px;
     left: 50%;
     top: 275px;
     background: #7645d9;
     transition: transform 0.35s ease-in-out 0s;
     transform: scaleY(0);
     transform-origin: center top;
-    z-index: 1;
+    z-index: 4;
 }
 
 .line-one.dark-theme {
     position: absolute;
     height: 128px;
-    width: 5px;
+    width: 1px;
     left: 50%;
     top: 275px;
     background: #9a6aff;
     transition: transform 0.35s ease-in-out 0s;
     transform: scaleY(0);
     transform-origin: center top;
-    z-index: 1;
+    z-index: 4;
 }
 
 @media screen and (min-width: 968px) {
-    .line-one {
+    .line-one.light-theme {
+        width: 108px;
+        height: 1px;
+        left: 277px;
+        top: 50%;
+        transform: scaleX(0);
+        transform-origin: right center;
+    }
+
+    .line-one.dark-theme {
         width: 108px;
         height: 1px;
         left: 277px;
@@ -141,7 +148,11 @@ div {
 }
   
 @media screen and (min-width: 968px) {
-    .line-one::before {
+    .line-one.light-theme::before {
+        inset: -2px 0px auto auto;
+    }
+
+    .line-one.dark-theme::before {
         inset: -2px 0px auto auto;
     }
 }
@@ -167,7 +178,7 @@ div {
 
 .part-one {
     position: relative;
-    z-index: 4;
+    z-index: 3;
     margin-top: 118px;
 }
 
@@ -237,7 +248,7 @@ div {
 .line-two.light-theme {
     position: absolute;
     width: 100%;
-    height: 5px;
+    height: 1px;
     background: #7645d9;
     bottom: 0px;
 }
@@ -245,19 +256,27 @@ div {
 .line-two.dark-theme {
     position: absolute;
     width: 100%;
-    height: 5px;
+    height: 1px;
     background: #9a6aff;
     bottom: 0px;
 }
 
 
 @media screen and (min-width: 968px) {
-    .line-two {
+    .line-two.light-theme {
         bottom: auto;
         top: 0px;
         right: 1px;
         height: 100%;
-        width: 5px;
+        width: 1px;
+    }
+
+    .line-two.dark-theme {
+        bottom: auto;
+        top: 0px;
+        right: 1px;
+        height: 100%;
+        width: 1px;
     }
 }
 
@@ -378,7 +397,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .bYcBXK {
+    .bYcBXK.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -51px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .bYcBXK.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -400,7 +431,7 @@ div {
         top: 0px;
         width: 108px;
         border-radius: 24px;
-        border: 5px solid #e7e3eb;
+        border: 1px solid #e7e3eb;
         background: #fff;
         box-shadow: 0px 2px 0px 0px #e7e3eb;
     }
@@ -413,7 +444,7 @@ div {
         top: 0px;
         width: 108px;
         border-radius: 24px;
-        border: 5px solid #383241;
+        border: 1px solid #383241;
         background: #27262c;
         box-shadow: 0px 2px 0px 0px #383241;
     }
@@ -456,7 +487,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .cFQsTH {
+    .cFQsTH.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -48.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .cFQsTH.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -535,7 +578,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .UzbBi {
+    .UzbBi.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -57.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .UzbBi.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -613,7 +668,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .cWcfGd {
+    .cWcfGd.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -62.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .cWcfGd.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -692,7 +759,19 @@ div {
   
 
 @media screen and (min-width: 968px) {
-    .VpIwQ {
+    .VpIwQ.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -13.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .VpIwQ.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -770,7 +849,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .hYRNmJ {
+    .hYRNmJ.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -56px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .hYRNmJ.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -848,7 +939,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .SSZbf {
+    .SSZbf.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -34.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .SSZbf.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -926,7 +1029,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .jBBscj {
+    .jBBscj.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -64.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .jBBscj.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -982,7 +1097,11 @@ div {
 }
 
 @supports (-webkit-text-size-adjust: none) and (not (-ms-accelerator: true)) and (not (-moz-appearance: none)) {
-    .child-svg-container svg {
+    .child-svg-container.light-theme svg {
+        filter: none !important;
+    }
+
+    .child-svg-container.dark-theme svg {
         filter: none !important;
     }
 }
@@ -1217,7 +1336,15 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .jtD {
+    .jtD.light-theme {
+        bottom: 0px;
+        top: auto;
+        left: 0px;
+        height: 100%;
+        width: 1px;
+    }
+
+    .jtD.dark-theme {
         bottom: 0px;
         top: auto;
         left: 0px;
@@ -1263,7 +1390,16 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .eaF {
+    .eaF.light-theme {
+        width: 108px;
+        height: 1px;
+        left: -108px;
+        top: 50%;
+        transform-origin: left center;
+        transform: scaleX(0);
+    }
+
+    .eaF.dark-theme {
         width: 108px;
         height: 1px;
         left: -108px;
@@ -1440,7 +1576,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .hRpYnQ {
+    .hRpYnQ.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -51.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .hRpYnQ.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -1511,7 +1659,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .jkNBxj {
+    .jkNBxj.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -39.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .jkNBxj.dark.theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -1581,7 +1741,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .enBcKL {
+    .enBcKL.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -54px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .enBcKL.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -1651,7 +1823,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .ieACox {
+    .ieACox.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -21.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .ieACox.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -1721,7 +1905,19 @@ div {
 }
 
 @media screen and (min-width: 968px) {
-    .gDeGgY {
+    .gDeGgY.light-theme {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 52px;
+        white-space: nowrap;
+        position: relative;
+        left: -47.5px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .gDeGgY.dark-theme {
         margin-bottom: 0px;
         margin-right: 0px;
         width: 52px;
@@ -1761,22 +1957,3 @@ div {
         box-shadow: 0px 2px 0px 0px #383241;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
