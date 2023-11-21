@@ -220,7 +220,9 @@
     background-color: var(--bg-dark) !important;
 }
 
-
+.language, .settings i{
+    padding-top: 0rem;
+}
 
 
 /* Responsive Design */
@@ -269,6 +271,11 @@
         .main-navbar .light-theme h2 {
             font-size: 0.8rem;
         }
+ 
+        .language, .settings i{
+            padding-top: 0.5rem;
+        }
+       
 }
 
 @media (max-width: 500px) {
