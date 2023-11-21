@@ -4,6 +4,7 @@ import { themeChange } from "./themchange.js";
 import { mainNavDocComponent } from "./main-navbar.js";
 import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
+import { exchange } from "./script-for-s4.js";
 
 
 partnersAnimationDocComponent();
@@ -12,6 +13,7 @@ themeChange();
 buyCakeDocComponent();
 mainNavDocComponent();
 communityDocComponents();
+exchange();
 
 
 
