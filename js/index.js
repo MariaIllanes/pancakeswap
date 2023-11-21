@@ -4,10 +4,11 @@ import { themeChange } from "./themchange.js";
 import { mainNavDocComponent } from "./main-navbar.js";
 import { ecosystemDocComponent } from "./ecosystem.js";
 import { communityDocComponents } from "./community.js";
-
+import { exchange } from "./script-for-s4.js";
 
 communityDocComponents();
 ecosystemDocComponent();
+exchange();
 mainBannerDocComponent();
 themeChange();
 buyCakeDocComponent();
