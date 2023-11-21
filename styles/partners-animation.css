@@ -1,4 +1,14 @@
 
+.partners-animation-container.dark-theme{
+    background-color: #08070a;
+}
+
+
+.partners-animation-container.light-theme{
+    background-color: #faf9fa;
+}
+
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -74,27 +84,27 @@ div {
 .line-one.light-theme {
     position: absolute;
     height: 128px;
-    width: 1px;
+    width: 5px;
     left: 50%;
     top: 275px;
     background: #7645d9;
     transition: transform 0.35s ease-in-out 0s;
     transform: scaleY(0);
     transform-origin: center top;
-    z-index: 4;
+    z-index: 1;
 }
 
 .line-one.dark-theme {
     position: absolute;
     height: 128px;
-    width: 1px;
+    width: 5px;
     left: 50%;
     top: 275px;
     background: #9a6aff;
     transition: transform 0.35s ease-in-out 0s;
     transform: scaleY(0);
     transform-origin: center top;
-    z-index: 4;
+    z-index: 1;
 }
 
 @media screen and (min-width: 968px) {
@@ -157,7 +167,7 @@ div {
 
 .part-one {
     position: relative;
-    z-index: 3;
+    z-index: 4;
     margin-top: 118px;
 }
 
@@ -227,7 +237,7 @@ div {
 .line-two.light-theme {
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 5px;
     background: #7645d9;
     bottom: 0px;
 }
@@ -235,7 +245,7 @@ div {
 .line-two.dark-theme {
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 5px;
     background: #9a6aff;
     bottom: 0px;
 }
@@ -247,7 +257,7 @@ div {
         top: 0px;
         right: 1px;
         height: 100%;
-        width: 1px;
+        width: 5px;
     }
 }
 
@@ -390,7 +400,7 @@ div {
         top: 0px;
         width: 108px;
         border-radius: 24px;
-        border: 1px solid #e7e3eb;
+        border: 5px solid #e7e3eb;
         background: #fff;
         box-shadow: 0px 2px 0px 0px #e7e3eb;
     }
@@ -403,7 +413,7 @@ div {
         top: 0px;
         width: 108px;
         border-radius: 24px;
-        border: 1px solid #383241;
+        border: 5px solid #383241;
         background: #27262c;
         box-shadow: 0px 2px 0px 0px #383241;
     }
