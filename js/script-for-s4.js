@@ -11,7 +11,7 @@ export const exchange = () => {
                     Shaping the Future of Decentralized Trading:
                 </div>
                 <div class="lmRHOx theme-change light-theme">
-                    PancakeSwap’s Unstoppable Expansion
+                    PancakeSwaps Unstoppable Expansion
                 </div>
                 <div class="cjGCak jTConU" style="gap: 50px;">
                     <div class="stEjy">
