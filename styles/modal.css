@@ -69,14 +69,12 @@ border-radius: 2rem !important;
     height: 40px;
   }
   
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* Slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -107,10 +105,7 @@ border-radius: 2rem !important;
     background-color: grey;
   }
   
-  /* input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  } */
-  
+
   input:checked + .slider:before {
     -webkit-transform: translateX(30px);
     -ms-transform: translateX(30px);
@@ -118,7 +113,6 @@ border-radius: 2rem !important;
     background-color:#27262c;
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
     display: flex;
@@ -145,8 +139,6 @@ border-radius: 2rem !important;
  .icon-light{
     align-content: center;
  }
-/* toogle button end */
-
 
 
 #icon-sun.light-theme{
@@ -157,3 +149,123 @@ border-radius: 2rem !important;
     stroke: white !important;
    }
 
+
+
+/* Toggles generic */
+
+.switch-generic {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+}
+
+.switch-generic input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-generic {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-generic.dark-theme {
+  background-color: #372f46;
+}
+
+.slider-generic:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 6px;
+  bottom: 4px;
+  background-color: #27262c;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-generic.dark-theme:before {
+  background-color: #27262c;
+}
+
+.slider-generic.light-theme:before {
+  background-color: white;
+}
+
+
+
+input:checked + .slider-generic {
+  background-color: #32d0aa;
+}
+
+input:focus + .slider-generic {
+  box-shadow: 0 0 1px #32d0aa;
+}
+
+input:checked + .slider-generic:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-generic.round {
+  border-radius: 34px;
+}
+
+.slider-generic.round:before {
+  border-radius: 50%;
+}
+
+/* Button Section of Modal */
+
+.transaction-speed-container {
+  display: flex;
+}
+
+
+.transaction-speed-btn {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+  border: none;
+
+  color: #1cc6d3;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.transaction-speed-btn.dark-theme{
+background-color: #343546;
+}
+
+.transaction-speed-btn.light-theme{
+background-color: #eff5f4;
+}
+
+
+.transaction-speed-btn.selected {
+  background-color: #1cc6d3;
+}
+
+
+.transaction-speed-btn.light-theme.selected {
+  color: #fefeff;
+}
+
+.transaction-speed-btn.dark-theme.selected {
+  color: #343546;
+}
