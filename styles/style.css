@@ -68,21 +68,14 @@ body {
     background: none;
 }
 
-.btn-sec.light-theme a{
-    color: #1FC7D4;
+.btn-sec a{
+    color: #1FC7D4 !important;
 }
 
-.btn-sec.dark-theme a{
-    color: var(--btn-dark-text);
+.btn-sec-mb a{
+    color: #1FC7D4 !important;
 }
 
-.btn-sec-mb.light-theme a{
-    color: #1FC7D4;
-}
-
-.btn-sec-mb.dark-theme a{
-    color: var(--btn-dark-text);
-}
 .btn-container {
     display: flex;
     flex-direction: row;
