@@ -19,30 +19,30 @@ export const footerBannerDocComponent = () => {
         </div>
 
         <div id="footer-banner-hidden-section">
-            <div class="tabs theme-change light-theme">
-                <div class="tab-container">
-                    <div id="tab2" class="tab theme-change light-theme">
-                      <a href="#tab2">What's a Web3 Wallet?</a>
+            <div class="footer-tabs theme-change light-theme">
+                <div class="footer-tab-container">
+                    <div id="footer-tab2" class="footer-tab theme-change light-theme">
+                      <a href="#footer-tab2">What's a Web3 Wallet?</a>
                       <div id="w3-container">
-                        <div class="tab-content theme-change light-theme" id="tab-content2">
+                        <div class="footer-tab-content theme-change light-theme" id="footer-tab-content2">
                           <div class="w3-content">
-                                <div class="slideshow-container theme-change light-theme">
-                                    <div class="card-slide card1">
+                                <div class="footer-slideshow-container theme-change light-theme">
+                                    <div class="footer-card-slide footer-card1">
                                     <h3>Your first step in the DeFi world</h3>
                                     <img src="https://cdn.pancakeswap.com/wallets/wallet_intro.png" width="250" height="250">
                                     <p class="theme-change light-theme">A Web3 Wallet allows you to send and receive crypto assets like bitcoin, BNB, ETH, NFTs and much more.</p>
                                     </div>
                                     
-                                    <div class="card-slide card2 theme-change light-theme" style="display: none;">
+                                    <div class="footer-card-slide footer-card2 theme-change light-theme" style="display: none;">
                                     <h3>Login using a wallet connection </h3>
                                     <img src="https://cdn.pancakeswap.com/wallets/world_lock.png"  width="250" height="250">
                                     <p class="theme-change light-theme">Instead of setting up new accounts and passwords for every website, simply set up your wallet in one go, and connect it to your favorite DApps.</p>
                                     </div>
                                 </div>
           
-                            <div class="slideshow-buttons theme-change light-theme">
-                              <button class="w3-slide-button theme-change light-theme" id="w3-slide-button1" onclick="showCard(1)"></button>
-                              <button class="w3-slide-button theme-change light-theme" id="w3-slide-button2" onclick="showCard(2)"></button>
+                            <div class="footer-slideshow-buttons theme-change light-theme">
+                              <button class="w3-slide-button" id="w3-slide-button1" onclick="showCard(1)"></button>
+                              <button class="w3-slide-button" id="w3-slide-button2" onclick="showCard(2)"></button>
                             </div>
           
                             <div class="fb-button" id="fb-w3-button"> 
@@ -62,10 +62,10 @@ export const footerBannerDocComponent = () => {
                     </div>
                 </div> 
                 
-                <div id="tab1" class="tab theme-change light-theme">
-                    <a href="#tab1">Connect Wallet</a>
-                    <div class="tab-content theme-change light-theme">
-                      <div class="tab-content-cw">
+                <div id="footer-tab1" class="footer-tab theme-change light-theme">
+                    <a href="#footer-tab1">Connect Wallet</a>
+                    <div class="footer-tab-content theme-change light-theme">
+                      <div class="footer-tab-content-cw">
                         <div class="theme-change light-theme" id="cw-left">
                           <div class="theme-change light-theme" id="cw-left-text">
                             <h3>Connect Wallet</h3>

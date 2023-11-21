@@ -1,5 +1,5 @@
 /* borrar */
-/* .footer-banner{
+.footer-banner{
   background-image: url(../assets/footer-banner/footer-banner-bg.png);
     height: 600px;
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
-} */
+}
 
 .footer-banner-text{
   display: flex;
@@ -81,21 +81,12 @@
 }
 
 #footer-banner-hidden-section{
-  display: none;
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 40px;
 }
 
-.footer-banner{
-  background-image: url(../assets/footer-banner/footer-banner-bg.png);
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-}
 /* css tabs and container ----------------------------------------------------------------------------------*/
 :root {
   --purple:  #7a6eaa;
@@ -106,6 +97,8 @@
   --greypurple: #b6b3c3;
   --tabs-width: 120px;
   --tabs-height: 13px;
+  --communityInactiveButton: rgba(122, 110, 170, 0.7);
+  --communityActiveButton: rgb(118, 69, 217);
 }
 
 /* aspecto básico */
@@ -123,21 +116,21 @@ a {
   text-decoration: none;
 } 
 
-.tabs{
+.footer-tabs{
 display: flex;
 justify-content: center;
 align-content: center;
 }
 
 /* esto es para posicionar las pestañas correctamente ------------------ */
-.tab-container {
+.footer-tab-container {
   position: absolute;
   padding-top: 35px; /* editar al añadir al banner completo */
 } 
 
-#tab1>a { --tabs-position: 0; }
-#tab2>a { --tabs-position: 1.1; }
-.tab>a {
+#footer-tab1>a { --tabs-position: 0; }
+#footer-tab2>a { --tabs-position: 1.1; }
+.footer-tab>a {
   text-align: center;
   position: absolute;
   width: fit-content;
@@ -146,11 +139,11 @@ align-content: center;
   left: calc(var(--tabs-width) * var(--tabs-position)); /* posición de cada pestaña */
 }
 
-.tabs { 
+.footer-tabs { 
   padding: 10px;
   display: flex;
 }
-              .tab-content.light-theme {
+              .footer-tab-content.light-theme {
                 background-color: var(--lightPurple); 
                 padding: 20px;
                 position: relative;
@@ -162,7 +155,7 @@ align-content: center;
                 border-radius: 20px 20px 20px 20px;
               }
 
-              .tab-content.dark-theme {
+              .footer-tab-content.dark-theme {
                 background-color: #3b4155; 
                 padding: 20px;
                 position: relative;
@@ -176,7 +169,7 @@ align-content: center;
 
 
 
-.tab.light-theme >a {
+.footer-tab.light-theme >a {
   color: var(--lightPurple);
   background-color: var(--purple); 
   padding: 10px;
@@ -184,7 +177,7 @@ align-content: center;
   border-bottom: 0;
 }
 
-.tab.dark-theme >a {
+.footer-tab.dark-theme >a {
   color: var(--cardwhite);
   background-color: var(--purple); 
   padding: 10px;
@@ -193,20 +186,20 @@ align-content: center;
 }
 
 
-.tab.light-theme:target>a, .tab.light-theme:last-of-type>a {
+.footer-tab.light-theme:target>a, .footer-tab.light-theme:last-of-type>a {
   color: #b8add2;
   background-color: var(--lightPurple) ; 
   z-index: 200;
 }
 
 
-.tab.dark-theme:target>a, .tab.dark-theme:last-of-type>a {
+.footer-tab.dark-theme:target>a, .footer-tab.dark-theme:last-of-type>a {
   color: #b8add2;
   background-color: #372f47 ; 
   z-index: 200;
 }
 /*  */
-.tab:target ~ .tab:last-of-type>a {
+.footer-tab:target ~ .footer-tab:last-of-type>a {
   background-color: var(--purple); 
   color: var(--lightPurple);
   z-index: 0; 
@@ -214,11 +207,11 @@ align-content: center;
 
 
 
-.tab:target .tab-content, .tab:last-of-type .tab-content {
+.footer-tab:target .footer-tab-content, .footer-tab:last-of-type .footer-tab-content {
   display: flex;
 }
 
-.tab:target ~ .tab:last-of-type .tab-content {
+.footer-tab:target ~ .footer-tab:last-of-type .footer-tab-content {
   display: none;
 }
 
@@ -343,7 +336,7 @@ align-content: center;
 
 
 /* connect wallet - rigth section ----------------------------------------------------------------*/
-.tab-content-cw{
+.footer-tab-content-cw{
   display: grid;
   grid-template-columns: 4fr 3fr;
   gap: 10px 10px 10px;
@@ -391,24 +384,24 @@ align-content: center;
 /* web3 section */
 
 
-.card-slide {
+.footer-card-slide {
   display: inline;
 }
 
-                        .slideshow-container.light-theme{
+                        .footer-slideshow-container.light-theme{
                           color: var(--purple);
                         }
 
-                        .slideshow-container.dark-theme{
+                        .footer-slideshow-container.dark-theme{
                           color: var(--cardwhite);
                         }
 
-.card1 {
+.footer-card1 {
   display: block;
 }
 
 /* Styling for the buttons */
-.slideshow-container{
+.footer-slideshow-container{
   display: inline-flex;
   text-align: center;
   max-width: 400px;
@@ -433,7 +426,7 @@ align-content: center;
 
 
 
-.slideshow-buttons button{
+.footer-slideshow-buttons button{
   width: 70px;
   height: 10px;
   background-color: var(--purple);
@@ -442,7 +435,7 @@ align-content: center;
   margin: 0 0 10px;
 }
 
-.slideshow-buttons {
+.footer-slideshow-buttons {
   text-align: center;
   margin: 10px 0;
 }
@@ -461,7 +454,7 @@ align-content: center;
   gap: 10px;
 }
 
-#tab-content2{
+#footer-tab-content2{
   flex-direction: column;
   gap: 10px;
   justify-content: center;
@@ -475,7 +468,7 @@ align-content: center;
   margin: 25px 0;
 }
 
-#tab2{
+#footer-tab2{
   display: flex;
 }
 
@@ -488,6 +481,30 @@ align-content: center;
 #w3-slide-button2.dark-theme{
   background-color: var(--lightPurple);
 }
+
+
+
+
+
+
+.footer-slideshow-buttons button{
+  display: inline-flex;
+  border: none;
+  background-color: var(--communityInactiveButton);
+  width: 35px;
+  height: 8px;
+  bottom: 10px;
+}
+
+.footer-slideshow-buttons button.active{
+  background-color: var(--communityActiveButton);
+}
+
+
+
+
+
+
 
 
 
@@ -535,9 +552,9 @@ align-content: center;
 
 
 @media (max-width: 900px){
-    .tab-container{
+    /* .footer-tab-container{
       position: fixed;
-    }
+    } */
 
     /* #tab1-container a{
       width: 100px !important;    
@@ -583,12 +600,16 @@ align-content: center;
     #cw-left{
       width: 400px;
     }
+
+    .footer-tab-content{
+      width: 90%;
+    }
 }
 
 @media (max-width: 700px){
-  .footer-banner h2{
+  /* .footer-banner h2{
 
-  }
+  } */
 
   #footer-banner1{
     position: absolute;
