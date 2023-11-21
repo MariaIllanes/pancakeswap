@@ -23,7 +23,7 @@ body .buy-cake{
 }
 
 .buy-cake.light-theme{
-    background-color: var(--bg-light) !important; 
+    background-color: #faf9fa !important; 
 }
 
 .buy-cake.dark-theme h1{
