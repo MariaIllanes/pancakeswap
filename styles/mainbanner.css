@@ -185,6 +185,12 @@
     .main-banner-buttons{
         padding: 5px 8px;
     }
+
+    .main-banner-buttons{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 /* 
 @media (max-width: 700px){
