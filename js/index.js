@@ -6,7 +6,10 @@ import { ecosystemDocComponent } from "./ecosystem.js";
 import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
+import { adCarousselDocComponent } from "./ad-caroussel.js";
 
+
+adCarousselDocComponent();
 communityDocComponents();
 ecosystemDocComponent();
 partnersAnimationDocComponent();
