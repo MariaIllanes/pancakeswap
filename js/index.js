@@ -7,7 +7,8 @@ import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
 import {footerBannerDocComponent} from "./footer-banner.js"
-import {footerDocComponents} from "./footer.js"
+import {footerDocComponents} from "./footer.js";
+import {exchangeStatsDocComponents} from "./exchange-stats2.js";
 
 
 
@@ -21,6 +22,7 @@ mainNavDocComponent();
 exchange();
 footerBannerDocComponent();
 footerDocComponents();
+exchangeStatsDocComponents();
 
 
 
@@ -462,5 +464,47 @@ document.addEventListener('DOMContentLoaded', function () {
   selectTransactionSpeed(1);
 });
 
-// partners
+// exchange stats
+
+let exchangeCommunityIndex = 1; 
+
+function showExchangeCard(index) {
+    const communitySlides = document.querySelectorAll('.community-card-slide');
+    const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');
+
+    communitySlides.forEach(slide => {
+        slide.style.display = 'none';
+    });
+    communityButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    communitySlides[index - 1].style.display = 'block';
+    communityButtons[index - 1].classList.add('active');
+    exchangeCommunityIndex = index;
+}
+
+function exchangeAutoShow() {
+    const communitySlides = document.querySelectorAll('.community-card-slide');
+    const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');
+
+    communitySlides.forEach(slide => {
+        slide.style.display = 'none';
+    });
+    communityButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    exchangeCommunityIndex++;
+    if (exchangeCommunityIndex > communitySlides.length) {
+      exchangeCommunityIndex = 1;
+    }
+
+    communitySlides[exchangeCommunityIndex - 1].style.display = 'block';
+    communityButtons[exchangeCommunityIndex - 1].classList.add('active');
+}
+
+showExchangeCard(1);
+
+setInterval(exchangeAutoShow, 6000);
 
