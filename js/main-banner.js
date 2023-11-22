@@ -23,4 +23,3 @@ export const mainBannerDocComponent = () => {
 
     document.getElementById('main-banner').appendChild(newElement)
 }
-
