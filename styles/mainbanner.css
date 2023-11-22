@@ -40,30 +40,6 @@
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-.text-container h2{
-    max-width: 40rem;
-    line-height: 110%;
-}
-
-.text-container h4{
-    color: var(--lighth2);
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.light-theme h2{
-    color: #290e5e;
-}
-
-.dark-theme h2{
-
-    color: white;
-}
-
-.color-change {
-=======
 .main-banner.dark-theme h2{
     color: #edf6fe;
 }
@@ -86,7 +62,6 @@
 }
 
 .main-banner .color-change {
->>>>>>> main
     color: #7744d9;
 }
 
