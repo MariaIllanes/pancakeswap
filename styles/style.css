@@ -60,17 +60,12 @@ body {
     padding: 16px 23px;
 }
 
-<<<<<<< HEAD
-
-=======
 .btn-sec {
     border: 0;
-   
     font-weight: bold;
     font-size: 1rem;
     background: none;
 }
->>>>>>> main
 
 .btn-sec a{
     color: #1FC7D4 !important;
