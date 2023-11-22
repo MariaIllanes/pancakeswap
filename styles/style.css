@@ -39,6 +39,19 @@ body {
     font-size: 1rem;
 }
 
+.btn-main-white {
+    background-color: white;
+    color: #1FC7D4;
+    border: none;
+    box-shadow: 0.5px 1px black;
+    border-radius: 15px 15px 15px 15px;
+    padding: 7px 16px;
+    text-decoration: none;
+    align-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 .btn-main-blue:hover {
     opacity: 70%;
 }

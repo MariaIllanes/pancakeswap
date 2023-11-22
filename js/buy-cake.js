@@ -13,7 +13,3 @@ export const buyCakeDocComponent = () => {
 
     document.getElementById('buy-cake').appendChild(newElement)
 }
-
-
-//  BTN Link
-//  
