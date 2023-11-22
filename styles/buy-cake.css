@@ -20,6 +20,12 @@ body .buy-cake{
     margin: 0 !important;
     padding-bottom: 3rem !important;
     gap: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+
+.buy-cake{
+    z-index: 5;
 }
 
 .buy-cake.light-theme{
