@@ -6,6 +6,7 @@ import { ecosystemDocComponent } from "./ecosystem.js";
 import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
+import { adCarousselDocComponent } from "./ad-caroussel.js";
 import {footerBannerDocComponent} from "./footer-banner.js"
 import {footerDocComponents} from "./footer.js";
 import {exchangeStatsDocComponents} from "./exchange-stats2.js";
@@ -13,6 +14,8 @@ import {newsDocComponents} from "./news.js";
 
 
 
+
+adCarousselDocComponent();
 communityDocComponents();
 ecosystemDocComponent();
 partnersAnimationDocComponent();
