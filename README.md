@@ -16,22 +16,23 @@ This project will intend to replicate the design and functionality of the pancak
 
 ## Project Description
 
-Provide a more detailed description of your project. Explain what it does, its main features, and why it's useful or interesting.
+The project replicated the platform of pancakeswap.finance, its design, functionality and to an extent its responsiveness.
 
 ## Technologies Used
 
 During the development of this project we used the following:
 
-- React
+- React (not yet)
 - HTML
 - CSS
 - JavaScript
 - NPM
-- Other libraries or tools
+- Bootsrap
 
 ## Getting Started
 
-Provide instructions on how to get the project up and running on a local development environment.
+You open the project through index.html live server, in further stages of the project it will be done through Vite React
+All the components are connected through index.js which is displayed in the index.html
 
 ### Prerequisites
 
@@ -43,4 +44,6 @@ Provide instructions on how to get the project up and running on a local develop
 Explain the installation process step by step. This may include commands to run, configurations to set, or dependencies to install. For example:
 
 1. Clone the repository to your local machine:
+2. Open index.html through a live server
+3. Interact with the page freely
 
