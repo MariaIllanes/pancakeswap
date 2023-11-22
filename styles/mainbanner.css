@@ -10,7 +10,12 @@
     background-color: #edf6fe;
 }
 
-.mbcontainer {
+.main-banner.dark-theme {
+    background-color: #1e1935;
+}
+
+
+.main-banner .mbcontainer {
     width: 90%;
     margin-left: auto;
     display: flex;
@@ -18,29 +23,117 @@
     gap: 6rem;
 }
 
-.mbimg{
+.main-banner .mbimg{
     height: 650px;
     width: 650px;
 }
 
-.titleMB{
+.main-banner .titleMB{
     font-size: 5.5rem;
     line-height: 110%;
     max-width: 33rem;
     margin: 0;
-    padding-top: 6rem;
+    font-weight: bold;
 }
 
-.text-container h2{
-    max-width: 31rem;
+.main-banner.dark-theme h2{
+    color: #edf6fe;
+}
+
+.main-banner.light-theme h2{
+    color: black;
+}
+
+.main-banner .text-container h2{
+    max-width: 40rem !important;
+    line-height: 110% !important;
+}
+
+.main-banner .text-container h4{
     color: var(--lighth2);
-    line-height: 110%;
+    font-size: 1.5rem !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
 }
 
-.textcolour1 {
-    color: #290e5e;
-}
-
-.textcolour2 {
+.main-banner .color-change {
     color: #7744d9;
+}
+
+
+.btn-sec-mb {
+    background: none;
+    border: 2px solid #1FC7D4;
+    color: #1FC7D4;
+    border-radius: 15px 15px 15px 15px;
+    text-decoration: none;
+    align-content: center;
+    font-weight: bold !important;
+    font-size: 1rem !important;
+}
+
+.btn-expanded-mb{
+    padding: 16px 23px;
+}
+
+.btn-sec-mb:hover {
+    opacity: 70%;
+}
+
+
+.mbimg img{
+    width: 40rem;
+}
+
+
+.btn-sec-mb a{
+    text-decoration: none;
+    color: #1FC7D4;
+}
+
+.btn-sec-mb.light-theme a{
+    text-decoration: none;
+}
+
+#main-banner-img{
+    position: relative;
+    left: -50px;
+    top: 20px;
+    animation-name: slidein;
+    animation: main-banner-img 4s infinite linear;
+}
+
+
+@keyframes main-banner-img {
+    from { transform: rotate(0deg)  translate(5px) rotate(0deg); }
+    to { transform: rotate(360deg) translate(10px) rotate(-360deg); }
+}
+
+
+@media (max-width: 1100px) {
+    .mbimg img{
+        width: 20rem;
+    }
+
+    .main-banner .titleMB{
+        font-size: 2.5rem;
+        line-height: 110%;
+        max-width: 17rem;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .main-banner{
+        max-width: 100%;
+    }
+
+    .main-banner .text-container h4{
+        font-size: 1rem !important;
+    }
+
+
+    .text-container button {
+        margin-top: 1rem;
+    }
 }
