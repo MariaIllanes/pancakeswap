@@ -6,6 +6,9 @@ import { ecosystemDocComponent } from "./ecosystem.js";
 import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
+import {footerDocComponents} from "./footer.js"
+
+
 
 communityDocComponents();
 ecosystemDocComponent();
@@ -15,6 +18,7 @@ themeChange();
 buyCakeDocComponent();
 mainNavDocComponent();
 exchange();
+footerDocComponents();
 
 
 
@@ -299,7 +303,6 @@ const gamesNFTCardData = [
 },
 ];
 
-
 gamesNFTCardData.forEach((data) => {
 const gamesNFTCard = document.createElement('div');
 gamesNFTCard.classList.add('ecosystem-gamenft-card');
@@ -334,6 +337,70 @@ ecosystemGamesNFTContainer.appendChild(gamesNFTCard);
 });
 
 
+// footer section
+const svgElement = document.getElementById('logo-telegram');
+const customOptions = document.getElementById('telegram-language-options');
+let menuVisible = false;
+
+svgElement.addEventListener('mouseenter', function() {
+    customOptions.style.display = 'block';
+    menuVisible = true;
+});
+
+customOptions.addEventListener('mouseleave', function() {
+    menuVisible = false;
+    setTimeout(() => {
+        if (!menuVisible) {
+            customOptions.style.display = 'none';
+        }
+    }, 500);
+});
+
+customOptions.addEventListener('click', function(e) {
+    if (e.target.tagName === 'LI') {
+        const selectedValue = e.target.getAttribute('data-value');
+        location.href = selectedValue; 
+    }
+});
+
+document.addEventListener('click', function(e) {
+    const isClickInside = svgElement.contains(e.target) || customOptions.contains(e.target);
+    if (!isClickInside) {
+        customOptions.style.display = 'none';
+        menuVisible = false;
+    }
+});
+
+
+
+
+
+// language button
+const worldSvgElement = document.getElementById('select-language-web-label');
+const languageOptions = document.getElementById('footer-language-options');
+let languageMenu = false;
+
+worldSvgElement.addEventListener('mouseenter', function() {
+    languageOptions.style.display = 'block';
+    languageMenu = true;
+});
+
+languageOptions.addEventListener('mouseleave', function() {
+    languageMenu = false;
+    setTimeout(() => {
+        if (!languageMenu) {
+            languageOptions.style.display = 'none';
+        }
+    }, 500);
+});
+
+document.addEventListener('click', function(e) {
+    const isClickInsideLanguage = worldSvgElement.contains(e.target) || customOptions.contains(e.target);
+    if (!isClickInsideLanguage) {
+        languageOptions.style.display = 'none';
+        languageMenu = false;
+    }
+});
 // community 
 let slideCommunityIndex = 1; 
 
