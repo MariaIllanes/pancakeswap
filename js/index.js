@@ -461,3 +461,6 @@ function selectTransactionSpeed(speedNumber) {
 document.addEventListener('DOMContentLoaded', function () {
   selectTransactionSpeed(1);
 });
+
+// partners
+
