@@ -56,23 +56,13 @@ body {
     opacity: 70%;
 }
 
-.btn-main-blue.dark-theme a{
-        text-decoration: none;
-        color: var(--btn-dark-text);
-    
-}
-
-.btn-main-blue.light-theme a{
-    text-decoration: none;
-    color: var(--btn-light-text);
-
-}
-
-
 .btn-expanded{
     padding: 16px 23px;
 }
 
+<<<<<<< HEAD
+
+=======
 .btn-sec {
     border: 0;
    
@@ -80,6 +70,7 @@ body {
     font-size: 1rem;
     background: none;
 }
+>>>>>>> main
 
 .btn-sec a{
     color: #1FC7D4 !important;
@@ -95,10 +86,10 @@ body {
     gap: 1rem;
 }
 
-.btn-main-blue.dark-theme {
+button.dark-theme {
     color: var(--btn-dark-text);
 }
 
-.btn-main-blue.light-theme {
+button.light-theme {
     color: var(--btn-light-text);
 }
