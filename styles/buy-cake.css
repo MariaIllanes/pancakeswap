@@ -12,50 +12,69 @@
 
     }
     
-.buy-cake {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding-bottom: 3rem;
-    gap: 0;
+body .buy-cake{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding-bottom: 3rem !important;
+    gap: 0 !important;
+    position: relative;
+    z-index: 1;
 }
 
-section.light-theme{
-    background-color: var(--bg-light);
+.buy-cake{
+    z-index: 5;
 }
 
-section.dark-theme h1{
-    color: var(--dark-text3h1);
+.buy-cake.light-theme{
+    background-color: #faf9fa !important; 
 }
 
-section.dark-theme{
-    background-color: var(--bg-dark);
+.buy-cake.dark-theme h1{
+    color: var(--dark-text3h1) !important;
 }
 
-section.dark-theme h1{
-    color: var(--dark-text3h1);
+.buy-cake.dark-theme{
+    background-color: var(--bg-dark) !important;
+}
+
+.buy-cake.dark-theme h1{
+    color: var(--dark-text3h1) !important;
+}
+
+.buy-cake h1{
+    text-align: center !important;
+}
+
+.language, .settings i{
+    padding-top: 0.5rem;
 }
     
-.buy-cake h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    margin-top: 2rem;
+body .buy-cake h1 {
+    font-size: 2.5rem !important;
+    margin: 0 !important;
+    margin-top: 2rem !important;
+    font-weight: bold;
 }
 
 
-.buy-subtitle {
-    max-width: 65%;
-    text-align: center;
+body .buy-cake .buy-subtitle {
+    max-width: 65% !important;
+    text-align: center !important;
 }
 
-.buy-subtitle h2 {
-    font-size: 1.3rem;
-    color: var(--light-text2h2);
+body .buy-cake .buy-subtitle h2 {
+    font-size: 1.3rem !important;
+    color: var(--light-text2h2) !important;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
-.color-change{
-    color: #7745d8;
+body .buy-cake .color-change{
+    color: #7745d8 !important;
 }
+
