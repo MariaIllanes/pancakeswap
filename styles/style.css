@@ -62,25 +62,19 @@ body {
 
 .btn-sec {
     border: 0;
-    color: var(--btn-dark-text);
+   
     font-weight: bold;
     font-size: 1rem;
     background: none;
 }
 
-.btn-sec:hover {
-    opacity: 70%;
-}
-
-.btn-sec:hover a{
-    text-decoration: underline;
-}
-
 .btn-sec a{
-    text-decoration: none;
-    color: var(--btn-bg);
+    color: #1FC7D4 !important;
 }
 
+.btn-sec-mb a{
+    color: #1FC7D4 !important;
+}
 
 .btn-container {
     display: flex;

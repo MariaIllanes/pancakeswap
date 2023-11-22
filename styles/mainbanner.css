@@ -112,7 +112,7 @@
 
 
 .mbimg img{
-    width: 700px;
+    width: 40rem;
 }
 
 
@@ -140,3 +140,29 @@
 }
 
 
+@media (max-width: 1100px) {
+    .mbimg img{
+        width: 20rem;
+    }
+
+    .main-banner .titleMB{
+        font-size: 2.5rem;
+        line-height: 110%;
+        max-width: 17rem;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .main-banner{
+        max-width: 100%;
+    }
+
+    .main-banner .text-container h4{
+        font-size: 1rem !important;
+    }
+
+
+    .text-container button {
+        margin-top: 1rem;
+    }
+}
