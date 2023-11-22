@@ -59,6 +59,7 @@ section.dark-theme{
     background: none;
     color: black;
     padding: 2.5rem 1.5rem 2.5rem 0rem;
+    border: none;
 }
 
 .CTA button:hover {
@@ -388,6 +389,7 @@ section.dark-theme{
 .CTA2 button{
     background: none;
     color: white;
+    border: none;
     /* padding: 0rem 1rem 1.5rem 0rem; */
 }
 
@@ -444,6 +446,7 @@ section.dark-theme{
     background: none;
     color: white;
     padding: 0rem 1rem 1rem 0rem;
+    border: none;
 }
 
 .CTA3 button:hover {
