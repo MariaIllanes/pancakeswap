@@ -6,6 +6,7 @@ import { ecosystemDocComponent } from "./ecosystem.js";
 import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
+import {footerBannerDocComponent} from "./footer-banner.js"
 import {footerDocComponents} from "./footer.js"
 
 
@@ -18,6 +19,7 @@ themeChange();
 buyCakeDocComponent();
 mainNavDocComponent();
 exchange();
+footerBannerDocComponent();
 footerDocComponents();
 
 
