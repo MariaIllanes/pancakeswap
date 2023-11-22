@@ -93,7 +93,7 @@ export const adCarousselDocComponent = () => {
             <h4>Swap and provide liquidity now</h4>
           </div>
           <div class="CTA2">
-            <button class="btn-sec" id="main">Get Started</button>
+            <button class="btn-sec" id="">Get Started</button>
           </div>
         </div>
         <div class="caroussel-img">

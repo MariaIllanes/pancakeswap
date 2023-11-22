@@ -130,7 +130,7 @@ export const footerDocComponents = () => {
       <div class="footer-buttons">
           <div class="footer-left">
               <label class="switch">
-                  <input type="checkbox" id="main">
+                  <input type="checkbox" id="">
                   <span class="slider round">
                       <div class="slider-images">
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon-ligth theme-change light-theme" id="icon-sun" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#27262c" fill="none" stroke-linecap="round" stroke-linejoin="round">
