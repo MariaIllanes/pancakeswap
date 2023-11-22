@@ -23,7 +23,7 @@ body .buy-cake{
 }
 
 .buy-cake.light-theme{
-    background-color: var(--bg-light) !important; 
+    background-color: #faf9fa !important; 
 }
 
 .buy-cake.dark-theme h1{
@@ -36,6 +36,14 @@ body .buy-cake{
 
 .buy-cake.dark-theme h1{
     color: var(--dark-text3h1) !important;
+}
+
+.buy-cake h1{
+    text-align: center !important;
+}
+
+.language, .settings i{
+    padding-top: 0.5rem;
 }
     
 body .buy-cake h1 {
