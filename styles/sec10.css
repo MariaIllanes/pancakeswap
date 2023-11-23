@@ -131,7 +131,7 @@
 }
 
 .card-text-container.light-theme {
-    height: 147px;
+    height: 186px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     overflow: hidden;
@@ -140,7 +140,7 @@
 }
 
 .card-text-container.dark-theme {
-    height: 147px;
+    height: 186px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     overflow: hidden;
