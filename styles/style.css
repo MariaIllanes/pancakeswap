@@ -102,3 +102,12 @@ body {
 .btn-main-blue.light-theme {
     color: var(--btn-light-text);
 }
+
+
+.community,.exchange-statistics-container,.exchange-stats2{
+    z-index: 1;
+}
+
+.partner-animation{
+    z-index: 5;
+}

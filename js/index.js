@@ -340,3 +340,6 @@ gamesNFTCard.addEventListener('mouseout', function () {
 
 ecosystemGamesNFTContainer.appendChild(gamesNFTCard);
 });
+
+
+// SEC 8 Exchange stats

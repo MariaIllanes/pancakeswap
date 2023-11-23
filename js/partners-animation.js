@@ -1316,5 +1316,5 @@ export const partnersAnimationDocComponent = () => {
     `
 
 
-    document.getElementById('exchange-stats2').appendChild(newElement)
+    document.getElementById('partners-animation').appendChild(newElement)
 }
