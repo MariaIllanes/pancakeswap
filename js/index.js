@@ -80,26 +80,26 @@ function applyStyles() {
     }
   }
   
-  // Aplicar los estilos al cargar la página
-  applyStyles();
+  // // Aplicar los estilos al cargar la página
+  // applyStyles();
   
-  // Escuchar el evento de cambio de tamaño de la ventana
-  window.addEventListener("resize", applyStyles);
+  // // Escuchar el evento de cambio de tamaño de la ventana
+  // window.addEventListener("resize", applyStyles);
   
-  const canvas = document.getElementById("miCanvas");
-  const ctx = canvas.getContext("2d");
+  // const canvas = document.getElementById("miCanvas");
+  // const ctx = canvas.getContext("2d");
   
-  // Crea una nueva imagen
-  const img = new Image();
+  // // Crea una nueva imagen
+  // const img = new Image();
   
-  // Asigna la ruta de la imagen
-  img.src = "/assets/sec7-canvas.png"; // Reemplaza esto con la ruta correcta de tu imagen
+  // // Asigna la ruta de la imagen
+  // img.src = "/assets/sec7-canvas.png"; // Reemplaza esto con la ruta correcta de tu imagen
   
-  // Espera a que la imagen se cargue antes de dibujarla en el canvas
-  img.onload = function () {
-    // Dibuja la imagen en el canvas
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-  };
+  // // Espera a que la imagen se cargue antes de dibujarla en el canvas
+  // img.onload = function () {
+  //   // Dibuja la imagen en el canvas
+  //   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  // };
   
 
 
