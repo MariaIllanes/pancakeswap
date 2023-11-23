@@ -41,8 +41,9 @@ body{
   align-items: center;
   flex-wrap: wrap;
   background: var(--greybackground);
-  padding: 0 0 50px 0;
 }
+
+
 
 #ecosystem-section-logo{
   margin: 80px 0 0 0;
@@ -54,11 +55,6 @@ body{
 
 .ecosystem h2{
   font-size: 2.5rem;
-  display: flex;
-  justify-content: center; 
-  gap: 20px;
-  padding: 15px 0;
-  font-weight: bold;
 }
 
 .ecosystem h2 span{

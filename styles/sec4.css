@@ -13,12 +13,6 @@
 
 *, ::before, ::after {
     box-sizing: border-box;
-
-}
-
-*, ::before, ::after {
-    box-sizing: border-box;
-    z-index: 0;
 }
 
 body {
@@ -165,18 +159,6 @@ span {
         width: 800px;
     }
 }
-
-@media screen and (max-width: 852px) {
-    
-    .cDHLip.dark-theme,
-    .cDHLip.light-theme,
-    .lmRHOx.dark-theme,
-    .lmRHOx.light-theme{
-        font-size: 1.5rem;
-        padding: 10px 0;
-    }
-}
-
 
 
 .jTConU {

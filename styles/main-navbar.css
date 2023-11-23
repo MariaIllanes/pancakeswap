@@ -18,7 +18,6 @@
      /* All */
      --btn-bg: #1FC7D4;
      --standar-size: 1rem;
-     --livscode-file://vscode-app/private/var/folders/8f/dpd4kpc93s9f021x7fmhz7h00000gn/T/AppTranslocation/C478F4DC-7EA1-4A5D-8EC4-94C18FB0388F/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmlght-text3h1
     }
 
 
@@ -182,7 +181,7 @@
 
 .chain-item.light-theme.btn-danger,.chain-item.btn-check:checked+.btn, .btn:first-child:active, :not(.btn-check)+.btn:active{
     background-color: var(--bg-btn-light) !important;
-    color: var(--livscode) !important;
+    color: var(--livscode-file://vscode-app/private/var/folders/8f/dpd4kpc93s9f021x7fmhz7h00000gn/T/AppTranslocation/C478F4DC-7EA1-4A5D-8EC4-94C18FB0388F/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmlght-text3h1) !important;
 }
 
 .chain-item.dark-theme.dropdown-item:hover{
@@ -250,7 +249,7 @@
     }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 850px) {
     .hidden-logo {
         display: none;
     }
@@ -275,10 +274,6 @@
  
         .language, .settings i{
             padding-top: 0.5rem;
-        }
-
-        .menu-list{
-            gap: 0.5rem;
         }
        
 }

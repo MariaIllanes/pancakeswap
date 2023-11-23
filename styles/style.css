@@ -56,12 +56,26 @@ body {
     opacity: 70%;
 }
 
+.btn-main-blue.dark-theme a{
+        text-decoration: none;
+        color: var(--btn-dark-text);
+    
+}
+
+.btn-main-blue.light-theme a{
+    text-decoration: none;
+    color: var(--btn-light-text);
+
+}
+
+
 .btn-expanded{
     padding: 16px 23px;
 }
 
 .btn-sec {
     border: 0;
+   
     font-weight: bold;
     font-size: 1rem;
     background: none;
@@ -81,10 +95,10 @@ body {
     gap: 1rem;
 }
 
-button.dark-theme {
+.btn-main-blue.dark-theme {
     color: var(--btn-dark-text);
 }
 
-button.light-theme {
+.btn-main-blue.light-theme {
     color: var(--btn-light-text);
 }
