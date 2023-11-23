@@ -6,13 +6,12 @@ import { ecosystemDocComponent } from "./ecosystem.js";
 import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
-import {footerBannerDocComponent} from "./footer-banner.js"
-import {footerDocComponents} from "./footer.js";
-import {exchangeStatsDocComponents} from "./exchange-stats2.js";
-import {newsDocComponents} from "./news.js";
+import { adCarousselDocComponent } from "./ad-caroussel.js";
+import { newsDocComponents } from "./news.js";
 
 
-
+newsDocComponents();
+adCarousselDocComponent();
 communityDocComponents();
 ecosystemDocComponent();
 partnersAnimationDocComponent();
@@ -21,10 +20,6 @@ themeChange();
 buyCakeDocComponent();
 mainNavDocComponent();
 exchange();
-footerBannerDocComponent();
-footerDocComponents();
-exchangeStatsDocComponents();
-newsDocComponents();
 
 
 
@@ -309,6 +304,10 @@ const gamesNFTCardData = [
 },
 ];
 
+function gamesNFTSmallScreen() {
+return window.innerWidth < 900;
+}
+
 gamesNFTCardData.forEach((data) => {
 const gamesNFTCard = document.createElement('div');
 gamesNFTCard.classList.add('ecosystem-gamenft-card');
@@ -341,176 +340,6 @@ gamesNFTCard.addEventListener('mouseout', function () {
 
 ecosystemGamesNFTContainer.appendChild(gamesNFTCard);
 });
-
-
-// footer section
-const svgElement = document.getElementById('logo-telegram');
-const customOptions = document.getElementById('telegram-language-options');
-let menuVisible = false;
-
-svgElement.addEventListener('mouseenter', function() {
-    customOptions.style.display = 'block';
-    menuVisible = true;
-});
-
-customOptions.addEventListener('mouseleave', function() {
-    menuVisible = false;
-    setTimeout(() => {
-        if (!menuVisible) {
-            customOptions.style.display = 'none';
-        }
-    }, 500);
-});
-
-customOptions.addEventListener('click', function(e) {
-    if (e.target.tagName === 'LI') {
-        const selectedValue = e.target.getAttribute('data-value');
-        location.href = selectedValue; 
-    }
-});
-
-document.addEventListener('click', function(e) {
-    const isClickInside = svgElement.contains(e.target) || customOptions.contains(e.target);
-    if (!isClickInside) {
-        customOptions.style.display = 'none';
-        menuVisible = false;
-    }
-});
-
-
-
-
-
-// language button
-const worldSvgElement = document.getElementById('select-language-web-label');
-const languageOptions = document.getElementById('footer-language-options');
-let languageMenu = false;
-
-worldSvgElement.addEventListener('mouseenter', function() {
-    languageOptions.style.display = 'block';
-    languageMenu = true;
-});
-
-languageOptions.addEventListener('mouseleave', function() {
-    languageMenu = false;
-    setTimeout(() => {
-        if (!languageMenu) {
-            languageOptions.style.display = 'none';
-        }
-    }, 500);
-});
-
-document.addEventListener('click', function(e) {
-    const isClickInsideLanguage = worldSvgElement.contains(e.target) || customOptions.contains(e.target);
-    if (!isClickInsideLanguage) {
-        languageOptions.style.display = 'none';
-        languageMenu = false;
-    }
-});
-// community 
-let slideCommunityIndex = 1; 
-
-function showCommunityCard(index) {
-    const communitySlides = document.querySelectorAll('.community-card-slide');
-    const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');
-
-    communitySlides.forEach(slide => {
-        slide.style.display = 'none';
-    });
-    communityButtons.forEach(button => {
-        button.classList.remove('active');
-    });
-
-    communitySlides[index - 1].style.display = 'block';
-    communityButtons[index - 1].classList.add('active');
-    slideCommunityIndex = index;
-}
-
-function communityAutoShow() {
-    const communitySlides = document.querySelectorAll('.community-card-slide');
-    const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');
-
-    communitySlides.forEach(slide => {
-        slide.style.display = 'none';
-    });
-    communityButtons.forEach(button => {
-        button.classList.remove('active');
-    });
-
-    slideCommunityIndex++;
-    if (slideCommunityIndex > communitySlides.length) {
-        slideCommunityIndex = 1;
-    }
-
-    communitySlides[slideCommunityIndex - 1].style.display = 'block';
-    communityButtons[slideCommunityIndex - 1].classList.add('active');
-}
-
-showCommunityCard(1);
-
-setInterval(communityAutoShow, 6000);
-
-
-
-//modal
-
-function selectTransactionSpeed(speedNumber) {
-  document.querySelectorAll('.transaction-speed-btn').forEach(button => {
-    button.classList.remove('selected');
-});
-
-  document.getElementById('speedBtn' + speedNumber).classList.add('selected');
-};
-
-document.addEventListener('DOMContentLoaded', function () {
-  selectTransactionSpeed(1);
-});
-
-// exchange stats
-
-let exchangeCommunityIndex = 1; 
-
-function showExchangeCard(index) {
-    const communitySlides = document.querySelectorAll('.community-card-slide');
-    const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');
-
-    communitySlides.forEach(slide => {
-        slide.style.display = 'none';
-    });
-    communityButtons.forEach(button => {
-        button.classList.remove('active');
-    });
-
-    communitySlides[index - 1].style.display = 'block';
-    communityButtons[index - 1].classList.add('active');
-    exchangeCommunityIndex = index;
-}
-
-function exchangeAutoShow() {
-    const communitySlides = document.querySelectorAll('.community-card-slide');
-    const communityButtons = document.querySelectorAll('.community-slideshow-buttons button');
-
-    communitySlides.forEach(slide => {
-        slide.style.display = 'none';
-    });
-    communityButtons.forEach(button => {
-        button.classList.remove('active');
-    });
-
-    exchangeCommunityIndex++;
-    if (exchangeCommunityIndex > communitySlides.length) {
-      exchangeCommunityIndex = 1;
-    }
-
-    communitySlides[exchangeCommunityIndex - 1].style.display = 'block';
-    communityButtons[exchangeCommunityIndex - 1].classList.add('active');
-}
-
-showExchangeCard(1);
-
-setInterval(exchangeAutoShow, 6000);
-
-
 
 // news
 
@@ -632,5 +461,3 @@ arrowRight.addEventListener("click", () => {
     });
   }
 });
-
-
