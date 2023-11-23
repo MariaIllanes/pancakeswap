@@ -11,7 +11,6 @@ export const adCarousselDocComponent = () => {
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" id="carousel-item1">
@@ -145,46 +144,6 @@ export const adCarousselDocComponent = () => {
         </div>
       </div>
       </div>
-      <div class="carousel-item " id="carousel-item4">
-        <div class="card4AC" id="card4">
-          <div class="text-container">
-            <div class="logoCont">
-              <img
-                src="https://assets.pancakeswap.finance/web/banners/liquidStakingTitle.png"
-                alt="PancakeSwap"
-                id="bunny-logo4"
-              />
-            </div>
-            <div class="titleAC4">
-              <h3>Traverse the Treasure Islands on Galxe now!</h3>
-            </div>
-            <div class="subtitleAC4">
-              <h4>Exclusive NFTs and treasures await!</h4>
-            </div>
-            <div class="CTA4">
-              <button class="btn-main-blue theme-change light-theme" id="">Get Started</button>
-            </div>
-          </div>
-          <div class="caroussel-img">
-            <img
-            src="/assets/Ad-caroussel/card4/"
-            id="base-bunny4"
-          />
-          <img
-          src="/assets/Ad-caroussel/card4/"
-          id="base-bunny4-alt"
-        />
-          <img
-          src="/assets/Ad-caroussel/card4/"
-          id="bunny-bg4"
-        />
-        <img
-        src="/assets/Ad-caroussel/card4"
-        id="bunny-bg4-2"
-      />
-          </div>
-        </div>
-      </div>
       <div class="carousel-item " id="carousel-item5">
         <div class="card5AC" id="card5">
           <div class="text-container">
@@ -249,3 +208,47 @@ export const adCarousselDocComponent = () => {
 
     document.getElementById('ad-caroussel').appendChild(newElement)
 }
+
+
+/*  <div class="carousel-item " id="carousel-item4">
+        <div class="card4AC" id="card4">
+          <div class="text-container">
+            <div class="logoCont">
+              <img
+                src="https://assets.pancakeswap.finance/web/banners/liquidStakingTitle.png"
+                alt="PancakeSwap"
+                id="bunny-logo4"
+              />
+            </div>
+            <div class="titleAC4">
+              <h3>Traverse the Treasure Islands on Galxe now!</h3>
+            </div>
+            <div class="subtitleAC4">
+              <h4>Exclusive NFTs and treasures await!</h4>
+            </div>
+            <div class="CTA4">
+              <button class="btn-main-blue theme-change light-theme" id="">Get Started</button>
+            </div>
+          </div>
+          <div class="caroussel-img">
+            <img
+            src="/assets/Ad-caroussel/card4/"
+            id="base-bunny4"
+          />
+          <img
+          src="/assets/Ad-caroussel/card4/"
+          id="base-bunny4-alt"
+        />
+          <img
+          src="/assets/Ad-caroussel/card4/"
+          id="bunny-bg4"
+        />
+        <img
+        src="/assets/Ad-caroussel/card4"
+        id="bunny-bg4-2"
+      />
+          </div>
+        </div>
+      </div>
+
+      */
