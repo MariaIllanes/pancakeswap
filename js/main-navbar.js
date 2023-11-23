@@ -1,8 +1,8 @@
 export const mainNavDocComponent = () => {
-  const newElement = document.createElement("section");
+    const newElement = document.createElement('section');
 
-  newElement.className = "main-navbar theme-change light-theme";
-  newElement.innerHTML = ` <svg
+    newElement.className = "main-navbar theme-change light-theme";
+    newElement.innerHTML = ` <svg
     viewBox="0 0 198 199"
     class="logo hidden-logo"
     color="text"
@@ -376,34 +376,9 @@ export const mainNavDocComponent = () => {
       <img src="/assets/Navbar/exchange.png" class="logo-icon" />
       <h2 class="exchange-number">$2.315</h2>
     </div>
-    <div class="language-dropdown">
-      <label class="select-language-web-label" for="select-language-web" id="select-language-navbar-label">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon-language" id="icon-language-navbar" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f4eeff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-            <path d="M3.6 9h16.8" />
-            <path d="M3.6 15h16.8" />
-            <path d="M11.5 3a17 17 0 0 0 0 18" />
-            <path d="M12.5 3a17 17 0 0 1 0 18" />
-        </svg> EN
-        </label> 
-        <ul class="footer-language-options" id="navbar-language-options">
-          <li value="EN">English</li>
-          <li value="EL">Ελληνικά</li>
-          <li value="ES">Español</li>
-          <li value="NE">Nederlands</li>
-          <li value="HI">हिंदी</li>
-          <li value="PO">Polski</li>
-          <li value="PT">Português</li>
-          <li value="">العربية</li>
-          <li value="FR">Français</li>
-          <li value="IN">Bahasa Indonesia</li>
-          <li value="">日本語</li>
-          <li value="">한국어</li>
-          <li value="TV">Tiếng Việt</li>
-          <li value="">简体中文</li>
-        </ul>
-  </div>
+    <div class="language theme-change light-theme">
+      <h2><i class="fa-solid fa-globe icon-list"></i></h2>
+    </div>
     <div class="settings theme-change light-theme">
       <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="settings-btn"><h2><i class="fa-solid fa-gear icon-list"></i></h2>
     </button>
@@ -600,7 +575,8 @@ export const mainNavDocComponent = () => {
    
    
    
-    `;
+    `
 
-  document.getElementById("main-navbar").appendChild(newElement);
-};
+
+    document.getElementById('main-navbar').appendChild(newElement)
+}

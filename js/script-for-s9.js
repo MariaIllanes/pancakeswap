@@ -1,3 +1,5 @@
+
+
 let slideCommunityIndex = 1; 
 
 function showCommunityCard(index) {
