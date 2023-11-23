@@ -1,56 +1,13 @@
-import { buyCakeDocComponent } from "./buy-cake.js";
-import { mainBannerDocComponent } from "./main-banner.js";
-import { themeChange } from "./themchange.js";
-<<<<<<< HEAD
-import { arrowButton2 } from "./arrow-button.js";
-
-themeChange();
-buyCakeDocComponent();
-arrowButton2();
-
-const arrowButton = document.querySelector(".other-element-button");
-const buttonContainer = document.querySelector(".other-element-container");
-const scrollThreshold = 0.25;
-
-// Función para llevar al usuario al inicio de la página
-arrowButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // Desplazamiento suave para llevar al usuario al inicio de la página.
-  });
-
-  arrowButton.style.transform = "scale(0.95)";
-
-  // Restaurar el tamaño del botón después de 500 ms
-  setTimeout(function () {
-    arrowButton.style.transform = "scale(1)";
-  }, 200);
-});
-
-// Función para controlar la visibilidad de la sección en función del desplazamiento
-function toggleSectionVisibility() {
-  const scrollPosition = window.scrollY;
-  const pageHeight = document.body.clientHeight;
-  if (scrollPosition >= pageHeight * scrollThreshold) {
-    buttonContainer.style.display = "block"; // Muestra la sección si el usuario ha desplazado un 20% de la página
-  } else {
-    buttonContainer.style.display = "none"; // Oculta la sección si el usuario está por debajo del 20% de desplazamiento
-  }
-}
-
-// Agregar un evento scroll a la ventana
-window.addEventListener("scroll", toggleSectionVisibility);
-
-// Asegúrate de verificar la visibilidad de la sección al cargar la página
-toggleSectionVisibility();
-=======
 import { mainNavDocComponent } from "./main-navbar.js";
 import { ecosystemDocComponent } from "./ecosystem.js";
 import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
 import { adCarousselDocComponent } from "./ad-caroussel.js";
-
+import { buyCakeDocComponent } from "./buy-cake.js";
+import { mainBannerDocComponent } from "./main-banner.js";
+import { themeChange } from "./themchange.js";
+import { arrowButton2 } from "./arrow-button.js";
 
 adCarousselDocComponent();
 communityDocComponents();
@@ -61,84 +18,111 @@ themeChange();
 buyCakeDocComponent();
 mainNavDocComponent();
 exchange();
+arrowButton2();
 
+const arrowButton = document.querySelector(".other-element-button");
+const buttonContainer = document.querySelector(".other-element-container");
+const scrollThreshold = 0.25;
 
+arrowButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+
+  arrowButton.style.transform = "scale(0.95)";
+
+  setTimeout(function () {
+    arrowButton.style.transform = "scale(1)";
+  }, 200);
+});
+
+function toggleSectionVisibility() {
+  const scrollPosition = window.scrollY;
+  const pageHeight = document.body.clientHeight;
+  if (scrollPosition >= pageHeight * scrollThreshold) {
+    buttonContainer.style.display = "block";
+  } else {
+    buttonContainer.style.display = "none";
+  }
+}
+
+window.addEventListener("scroll", toggleSectionVisibility);
+toggleSectionVisibility();
 
 // Función para aplicar los cambios según el tamaño de la pantalla
 function applyStyles() {
-    const screenWidth = window.innerWidth;
-  
-    // Obtener NodeList de elementos que necesitas cambiar
-    const contentSubcontainerOnes = document.querySelectorAll(
-      ".content-subcontainer-one"
-    );
-    const carousels = document.querySelectorAll(".carousel");
-    const children = document.querySelectorAll(".child");
-    const marqueeContainer = document.querySelectorAll(".marquee-container");
-    const marquees = document.querySelectorAll(".marquee");
-  
-    // Aplicar los cambios según el tamaño de la pantalla
-    if (screenWidth <= 968) {
-      contentSubcontainerOnes.forEach((element) => {
-        element.style.setProperty("--transform", "none");
-      });
-      carousels.forEach((element) => {
-        element.style.setProperty("--duration", "21.7425s");
-      });
-      children.forEach((element) => {
-        element.style.setProperty("--transform", "none");
-      });
-      marqueeContainer.forEach((element) => {
-        element.style.setProperty("--transform", "none");
-      });
-      marquees.forEach((element) => {
-        element.style.setProperty("--duration", "16.88s");
-      });
-    } else {
-      contentSubcontainerOnes.forEach((element) => {
-        element.style.setProperty("--transform", "rotate(-90deg)");
-      });
-      carousels.forEach((element) => {
-        element.style.setProperty("--duration", "8.32s");
-      });
-      children.forEach((element) => {
-        element.style.setProperty("--transform", "rotate(90deg)");
-      });
-      marqueeContainer.forEach((element) => {
-        element.style.setProperty("--transform", "rotate(-90deg)");
-      });
-      marquees.forEach((element) => {
-        element.style.setProperty("--duration", "5.2s");
-      });
-    }
+  const screenWidth = window.innerWidth;
+
+  // Obtener NodeList de elementos que necesitas cambiar
+  const contentSubcontainerOnes = document.querySelectorAll(
+    ".content-subcontainer-one"
+  );
+  const carousels = document.querySelectorAll(".carousel");
+  const children = document.querySelectorAll(".child");
+  const marqueeContainer = document.querySelectorAll(".marquee-container");
+  const marquees = document.querySelectorAll(".marquee");
+
+  // Aplicar los cambios según el tamaño de la pantalla
+  if (screenWidth <= 968) {
+    contentSubcontainerOnes.forEach((element) => {
+      element.style.setProperty("--transform", "none");
+    });
+    carousels.forEach((element) => {
+      element.style.setProperty("--duration", "21.7425s");
+    });
+    children.forEach((element) => {
+      element.style.setProperty("--transform", "none");
+    });
+    marqueeContainer.forEach((element) => {
+      element.style.setProperty("--transform", "none");
+    });
+    marquees.forEach((element) => {
+      element.style.setProperty("--duration", "16.88s");
+    });
+  } else {
+    contentSubcontainerOnes.forEach((element) => {
+      element.style.setProperty("--transform", "rotate(-90deg)");
+    });
+    carousels.forEach((element) => {
+      element.style.setProperty("--duration", "8.32s");
+    });
+    children.forEach((element) => {
+      element.style.setProperty("--transform", "rotate(90deg)");
+    });
+    marqueeContainer.forEach((element) => {
+      element.style.setProperty("--transform", "rotate(-90deg)");
+    });
+    marquees.forEach((element) => {
+      element.style.setProperty("--duration", "5.2s");
+    });
   }
-  
-  // Aplicar los estilos al cargar la página
-  applyStyles();
-  
-  // Escuchar el evento de cambio de tamaño de la ventana
-  window.addEventListener("resize", applyStyles);
-  
-  const canvas = document.getElementById("miCanvas");
-  const ctx = canvas.getContext("2d");
-  
-  // Crea una nueva imagen
-  const img = new Image();
-  
-  // Asigna la ruta de la imagen
-  img.src = "/assets/sec7-canvas.png"; // Reemplaza esto con la ruta correcta de tu imagen
-  
-  // Espera a que la imagen se cargue antes de dibujarla en el canvas
-  img.onload = function () {
-    // Dibuja la imagen en el canvas
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-  };
-  
+}
 
+// Aplicar los estilos al cargar la página
+applyStyles();
 
+// Escuchar el evento de cambio de tamaño de la ventana
+window.addEventListener("resize", applyStyles);
 
+const canvas = document.getElementById("miCanvas");
+const ctx = canvas.getContext("2d");
 
-const ecosystemTradeContainer = document.querySelector(".trade-cards-container");
+// Crea una nueva imagen
+const img = new Image();
+
+// Asigna la ruta de la imagen
+img.src = "/assets/sec7-canvas.png"; // Reemplaza esto con la ruta correcta de tu imagen
+
+// Espera a que la imagen se cargue antes de dibujarla en el canvas
+img.onload = function () {
+  // Dibuja la imagen en el canvas
+  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+};
+
+const ecosystemTradeContainer = document.querySelector(
+  ".trade-cards-container"
+);
 const tradeCardData = [
   {
     tradeURL: "https://pancakeswap.finance/swap",
@@ -146,7 +130,7 @@ const tradeCardData = [
     tradeHoveredImage: "assets/ecosystem/trade-swap.png",
     tradeTitle: "Swap",
     tradeDescription: "Trade crypto instantly across multiple chains",
-    tradeLink:"Trade Now >",
+    tradeLink: "Trade Now >",
   },
 
   {
@@ -155,40 +139,41 @@ const tradeCardData = [
     tradeHoveredImage: "/assets/ecosystem/trade-liquidity.png",
     tradeTitle: "Liquidity",
     tradeDescription: "Fund liquidity pools, earn trading fees",
-    tradeLink:"Add Now >",
-    },
-    
-    {
+    tradeLink: "Add Now >",
+  },
+
+  {
     tradeURL: "https://bridge.pancakeswap.finance/",
     tradeimageSrc: "/assets/ecosystem/trade-bridge-purple.png",
     tradeHoveredImage: "/assets/ecosystem/trade-bridge.png",
     tradeTitle: "Bridge",
     tradeDescription: "Seamlessly transfer assets across chains",
-    tradeLink:"Bridge Now >",
-    },
-    
-    {
+    tradeLink: "Bridge Now >",
+  },
+
+  {
     tradeURL: "https://pancakeswap.finance/buy-crypto",
     tradeimageSrc: "/assets/ecosystem/trade-perpetual-purple.png",
     tradeHoveredImage: "/assets/ecosystem/trade-perpetual.png",
     tradeTitle: "Perpetual",
     tradeDescription: "Trade endlessly without expiration dates",
-    tradeLink:"Trade Now >",
-    },
-    
-    {
+    tradeLink: "Trade Now >",
+  },
+
+  {
     tradeURL: "https://pancakeswap.finance/buy-crypto",
     tradeimageSrc: "/assets/ecosystem/trade-buy-crypto-purple.png",
     tradeHoveredImage: "/assets/ecosystem/trade-buy-crypto.png",
     tradeTitle: "Buy Crypto",
-    tradeDescription: "Buy crypto with your preferred currency and payment method",
-    tradeLink:"Buy Now >",
-    },
+    tradeDescription:
+      "Buy crypto with your preferred currency and payment method",
+    tradeLink: "Buy Now >",
+  },
 ];
 
 tradeCardData.forEach((data) => {
-  const tradeCard = document.createElement('div');
-  tradeCard.classList.add('ecosystem-trade-card');
+  const tradeCard = document.createElement("div");
+  tradeCard.classList.add("ecosystem-trade-card");
 
   tradeCard.innerHTML = `
     
@@ -204,68 +189,66 @@ tradeCardData.forEach((data) => {
     </a>
   `;
 
-  const cardLink = tradeCard.querySelector('.ecosystem-link')
-  const imageElement = tradeCard.querySelector('.trade-img img');
-  tradeCard.addEventListener('mouseover', function () {
+  const cardLink = tradeCard.querySelector(".ecosystem-link");
+  const imageElement = tradeCard.querySelector(".trade-img img");
+  tradeCard.addEventListener("mouseover", function () {
     imageElement.src = data.tradeHoveredImage;
-    cardLink.style.color = '#1fc7d4'
+    cardLink.style.color = "#1fc7d4";
   });
 
-  tradeCard.addEventListener('mouseout', function () {
+  tradeCard.addEventListener("mouseout", function () {
     imageElement.src = data.tradeimageSrc;
-    cardLink.style.color = 'initial'
+    cardLink.style.color = "initial";
   });
 
   ecosystemTradeContainer.appendChild(tradeCard);
 });
 
-
 //EARN CARDS
 const ecosystemEarnContainer = document.querySelector(".earn-cards-container");
 const earnCardData = [
-{
-  earnURL: "https://pancakeswap.finance/farms",
-  earnimageSrc: "/assets/ecosystem/earn-farm-purple.png",
-  earnHoveredImage: "assets/ecosystem/earn-farm.png",
-  earnTitle: "Farm",
-  earnDescription: "Stake LP tokens, harvest CAKE",
-  earnLink:"Stake Now >",
-},
+  {
+    earnURL: "https://pancakeswap.finance/farms",
+    earnimageSrc: "/assets/ecosystem/earn-farm-purple.png",
+    earnHoveredImage: "assets/ecosystem/earn-farm.png",
+    earnTitle: "Farm",
+    earnDescription: "Stake LP tokens, harvest CAKE",
+    earnLink: "Stake Now >",
+  },
 
-{
-  earnURL: "https://pancakeswap.finance/pools",
-  earnimageSrc: "/assets/ecosystem/earn-pools-purple.png",
-  earnHoveredImage: "assets/ecosystem/earn-pools.png",
-  earnTitle: "Pools",
-  earnDescription: "Stake CAKE, earn various rewards",
-  earnLink:"Stake Now >",
-},
+  {
+    earnURL: "https://pancakeswap.finance/pools",
+    earnimageSrc: "/assets/ecosystem/earn-pools-purple.png",
+    earnHoveredImage: "assets/ecosystem/earn-pools.png",
+    earnTitle: "Pools",
+    earnDescription: "Stake CAKE, earn various rewards",
+    earnLink: "Stake Now >",
+  },
 
-{
-  earnURL: "https://pancakeswap.finance/liquid-staking",
-  earnimageSrc: "/assets/ecosystem/earn-liquidity-staking-purple.png",
-  earnHoveredImage: "assets/ecosystem/earn-liquidity-staking.png",
-  earnTitle: "Liquid Staking",
-  earnDescription: "Earn rewards while retaining asset flexibility",
-  earnLink:"Stake Now >",
-},
+  {
+    earnURL: "https://pancakeswap.finance/liquid-staking",
+    earnimageSrc: "/assets/ecosystem/earn-liquidity-staking-purple.png",
+    earnHoveredImage: "assets/ecosystem/earn-liquidity-staking.png",
+    earnTitle: "Liquid Staking",
+    earnDescription: "Earn rewards while retaining asset flexibility",
+    earnLink: "Stake Now >",
+  },
 
-{
-  earnURL: "https://pancakeswap.finance/simple-staking",
-  earnimageSrc: "/assets/ecosystem/earn-fixed-staking-purple.png",
-  earnHoveredImage: "assets/ecosystem/earn-fixed-staking.png",
-  earnTitle: "Simple Staking",
-  earnDescription: "Earn rewards hassle-free with single-sided staking",
-  earnLink:"Stake Now >",
-},
-
+  {
+    earnURL: "https://pancakeswap.finance/simple-staking",
+    earnimageSrc: "/assets/ecosystem/earn-fixed-staking-purple.png",
+    earnHoveredImage: "assets/ecosystem/earn-fixed-staking.png",
+    earnTitle: "Simple Staking",
+    earnDescription: "Earn rewards hassle-free with single-sided staking",
+    earnLink: "Stake Now >",
+  },
 ];
 
 earnCardData.forEach((data) => {
-const earnCard = document.createElement('div');
-earnCard.classList.add('ecosystem-earn-card');
+  const earnCard = document.createElement("div");
+  earnCard.classList.add("ecosystem-earn-card");
 
-earnCard.innerHTML = `
+  earnCard.innerHTML = `
   <a href="${data.earnURL}" class="trade">
     <div class="earn-card" id="earn-container">
       <div class="trade-img">
@@ -279,81 +262,81 @@ earnCard.innerHTML = `
   
 `;
 
-const cardLink = earnCard.querySelector('.ecosystem-link')
-const imageElement = earnCard.querySelector('.trade-img img');
-earnCard.addEventListener('mouseover', function () {
-  imageElement.src = data.earnHoveredImage;
-  cardLink.style.color = '#1fc7d4'
+  const cardLink = earnCard.querySelector(".ecosystem-link");
+  const imageElement = earnCard.querySelector(".trade-img img");
+  earnCard.addEventListener("mouseover", function () {
+    imageElement.src = data.earnHoveredImage;
+    cardLink.style.color = "#1fc7d4";
+  });
+
+  earnCard.addEventListener("mouseout", function () {
+    imageElement.src = data.earnimageSrc;
+    cardLink.style.color = "initial";
+  });
+
+  ecosystemEarnContainer.appendChild(earnCard);
 });
-
-earnCard.addEventListener('mouseout', function () {
-  imageElement.src = data.earnimageSrc;
-  cardLink.style.color = 'initial'
-});
-
-ecosystemEarnContainer.appendChild(earnCard);
-});
-
-
 
 //GAMES & NFT CARDS
-const ecosystemGamesNFTContainer = document.querySelector(".gamenft-cards-container");
+const ecosystemGamesNFTContainer = document.querySelector(
+  ".gamenft-cards-container"
+);
 const gamesNFTCardData = [
-{
-  gameURL: "https://pancakeswap.finance/prediction",
-  gamesNFTimageSrc: "/assets/ecosystem/game-prediction-purple.png",
-  gamesNFTHoveredImage: "assets/ecosystem/game-prediction.png",
-  gamesNFTTitle: "Prediction",
-  gamesNFTDescription: "Forecast token prices within minutes",
-  gamesNFTLink:"Try Now >",
-},
+  {
+    gameURL: "https://pancakeswap.finance/prediction",
+    gamesNFTimageSrc: "/assets/ecosystem/game-prediction-purple.png",
+    gamesNFTHoveredImage: "assets/ecosystem/game-prediction.png",
+    gamesNFTTitle: "Prediction",
+    gamesNFTDescription: "Forecast token prices within minutes",
+    gamesNFTLink: "Try Now >",
+  },
 
-{
-  gameURL: "https://protectors.pancakeswap.finance/",
-  gamesNFTimageSrc: "/assets/ecosystem/game-pancake-protectors-purple.png",
-  gamesNFTHoveredImage: "assets/ecosystem/game-pancake-protectors.png",
-  gamesNFTTitle: "Pancake Protectors",
-  gamesNFTDescription: "Immersive PvP & PvE tower-defense GameFi",
-  gamesNFTLink:"Play Now >",
-},
+  {
+    gameURL: "https://protectors.pancakeswap.finance/",
+    gamesNFTimageSrc: "/assets/ecosystem/game-pancake-protectors-purple.png",
+    gamesNFTHoveredImage: "assets/ecosystem/game-pancake-protectors.png",
+    gamesNFTTitle: "Pancake Protectors",
+    gamesNFTDescription: "Immersive PvP & PvE tower-defense GameFi",
+    gamesNFTLink: "Play Now >",
+  },
 
-{
-  gameURL: "https://pancakeswap.finance/lottery",
-  gamesNFTimageSrc: "/assets/ecosystem/game-lottery-purple.png",
-  gamesNFTHoveredImage: "assets/ecosystem/game-lottery.png",
-  gamesNFTTitle: "Lottery",
-  gamesNFTDescription: "Enter for a chance to win CAKE prize pools",
-  gamesNFTLink:"Try Now >",
-},
+  {
+    gameURL: "https://pancakeswap.finance/lottery",
+    gamesNFTimageSrc: "/assets/ecosystem/game-lottery-purple.png",
+    gamesNFTHoveredImage: "assets/ecosystem/game-lottery.png",
+    gamesNFTTitle: "Lottery",
+    gamesNFTDescription: "Enter for a chance to win CAKE prize pools",
+    gamesNFTLink: "Try Now >",
+  },
 
-{
-  gameURL: "https://pancakeswap.finance/pottery",
-  gamesNFTimageSrc: "assets/ecosystem/game-pottery-purple.png",
-  gamesNFTHoveredImage: "/assets/ecosystem/game-pottery.png",
-  gamesNFTTitle: "Pottery",
-  gamesNFTDescription: "Stake CAKE, acquire pottery tickets, win prizes",
-  gamesNFTLink:"Try Now >",
-},
+  {
+    gameURL: "https://pancakeswap.finance/pottery",
+    gamesNFTimageSrc: "assets/ecosystem/game-pottery-purple.png",
+    gamesNFTHoveredImage: "/assets/ecosystem/game-pottery.png",
+    gamesNFTTitle: "Pottery",
+    gamesNFTDescription: "Stake CAKE, acquire pottery tickets, win prizes",
+    gamesNFTLink: "Try Now >",
+  },
 
-{
-  gameURL: "https://pancakeswap.finance/nfts",
-  gamesNFTimageSrc: "/assets/ecosystem/nft-marketplace-purple.png",
-  gamesNFTHoveredImage: "/assets/ecosystem/nft-marketplace.png",
-  gamesNFTTitle: "NFT Marketplace",
-  gamesNFTDescription: "Trade unique NFTs on BNB Chain",
-  gamesNFTLink:"Trade Now >",
-},
+  {
+    gameURL: "https://pancakeswap.finance/nfts",
+    gamesNFTimageSrc: "/assets/ecosystem/nft-marketplace-purple.png",
+    gamesNFTHoveredImage: "/assets/ecosystem/nft-marketplace.png",
+    gamesNFTTitle: "NFT Marketplace",
+    gamesNFTDescription: "Trade unique NFTs on BNB Chain",
+    gamesNFTLink: "Trade Now >",
+  },
 ];
 
 function gamesNFTSmallScreen() {
-return window.innerWidth < 900;
+  return window.innerWidth < 900;
 }
 
 gamesNFTCardData.forEach((data) => {
-const gamesNFTCard = document.createElement('div');
-gamesNFTCard.classList.add('ecosystem-gamenft-card');
+  const gamesNFTCard = document.createElement("div");
+  gamesNFTCard.classList.add("ecosystem-gamenft-card");
 
-gamesNFTCard.innerHTML = `
+  gamesNFTCard.innerHTML = `
 
   <a href="${data.gameURL}">
     <div class="gamenft-card">
@@ -367,18 +350,17 @@ gamesNFTCard.innerHTML = `
   </a>
 `;
 
-const cardLink = gamesNFTCard.querySelector('.ecosystem-link')
-const imageElement = gamesNFTCard.querySelector('.trade-img img');
-gamesNFTCard.addEventListener('mouseover', function () {
-  imageElement.src = data.gamesNFTHoveredImage;
-  cardLink.style.color = '#1fc7d4'
-});
+  const cardLink = gamesNFTCard.querySelector(".ecosystem-link");
+  const imageElement = gamesNFTCard.querySelector(".trade-img img");
+  gamesNFTCard.addEventListener("mouseover", function () {
+    imageElement.src = data.gamesNFTHoveredImage;
+    cardLink.style.color = "#1fc7d4";
+  });
 
-gamesNFTCard.addEventListener('mouseout', function () {
-  imageElement.src = data.gamesNFTimageSrc;
-  cardLink.style.color = 'initial'
-});
+  gamesNFTCard.addEventListener("mouseout", function () {
+    imageElement.src = data.gamesNFTimageSrc;
+    cardLink.style.color = "initial";
+  });
 
-ecosystemGamesNFTContainer.appendChild(gamesNFTCard);
+  ecosystemGamesNFTContainer.appendChild(gamesNFTCard);
 });
->>>>>>> main
