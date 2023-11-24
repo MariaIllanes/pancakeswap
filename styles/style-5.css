@@ -78,6 +78,10 @@ body{
   color: var(--purple);
 }
 
+.ecosystem-link.light-theme:visited{
+  color: initial;
+}
+
 .ecosystem-container{
   display: flex;
   flex-direction: column;
