@@ -27,53 +27,6 @@ document.addEventListener("click", (event) => {
 
 
 
-// carousel code
-// Code 1
-// (function() {
-//   let slideIndex = 1;
-//   window.showCard = function(index) {
-//     const slides = document.querySelectorAll('.card-slide');
-//     const buttons = document.querySelectorAll('.slideshow-buttons button');
-
-//     slides.forEach(slide => {
-//       slide.style.display = 'none';
-//     });
-//     buttons.forEach(button => {
-//       button.classList.remove('active');
-//     });
-
-//     slides[index - 1].style.display = 'block';
-//     buttons[index - 1].classList.add('active');
-//   };
-
-//   showCard(1);
-// })();
-
-// Code 2
-// (function() {
-//   let slideIndex = 1;
-//   window.autoShow = function() {
-//     const slides = document.querySelectorAll('.card-slide');
-//     const buttons = document.querySelectorAll('.slideshow-buttons button');
-
-//     slides.forEach(slide => {
-//       slide.style.display = 'none';
-//     });
-//     buttons.forEach(button => {
-//       button.classList.remove('active');
-//     });
-
-//     slideIndex++;
-//     if (slideIndex > slides.length) {
-//       slideIndex = 1;
-//     }
-
-//     slides[slideIndex - 1].style.display = 'block';
-//     buttons[slideIndex - 1].classList.add('active');
-//   };
-
-//   setInterval(window.autoShow, 6000);
-// })();
 
 
 
