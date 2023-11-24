@@ -427,16 +427,6 @@ a:-webkit-any-link{
         padding: 0;
     }
 
-    /* .community.dark-theme{
-        background: linear-gradient(#0b4574, #081116);
-        height: 1180px;
-    }
-
-    .community.ligth-theme{
-        background: linear-gradient(rgb(95, 116, 11), #081116);
-        height: 1180px;
-    } */
-
     #community-bg-bell{
         position: absolute;
         left:30px;
