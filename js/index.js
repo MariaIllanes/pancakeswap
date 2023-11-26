@@ -11,7 +11,10 @@ import { arrowButton2 } from "./arrow-button.js";
 import { newsDocComponents } from "./news.js";
 import {footerBannerDocComponent} from "./footer-banner.js";
 import {footerDocComponents} from "./footer.js";
+import { themeChangeFooter } from "./themchange.js";
 
+
+themeChangeFooter();
 newsDocComponents();
 adCarousselDocComponent();
 communityDocComponents();
