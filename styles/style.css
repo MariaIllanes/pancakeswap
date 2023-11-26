@@ -54,6 +54,12 @@ body {
 
 .btn-main-blue:hover {
     opacity: 70%;
+
+}
+
+.btn-main-blue:hover {
+    background-color: #1FC7D4;
+    
 }
 
 .btn-main-blue.dark-theme a{
@@ -101,4 +107,13 @@ body {
 
 .btn-main-blue.light-theme {
     color: var(--btn-light-text);
+}
+
+
+.community,.exchange-statistics-container,.exchange-stats2{
+    z-index: 1;
+}
+
+.partner-animation{
+    z-index: 5;
 }

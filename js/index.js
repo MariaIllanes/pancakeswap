@@ -4,6 +4,7 @@ import { communityDocComponents } from "./community.js";
 import { partnersAnimationDocComponent } from "./partners-animation.js";
 import { exchange } from "./script-for-s4.js";
 import { adCarousselDocComponent } from "./ad-caroussel.js";
+import { exchangeStatsDocComponents } from "./exchange-stats2.js";
 import { buyCakeDocComponent } from "./buy-cake.js";
 import { mainBannerDocComponent } from "./main-banner.js";
 import { themeChange } from "./themchange.js";
@@ -14,6 +15,9 @@ import {footerDocComponents} from "./footer.js";
 import { themeChangeFooter } from "./themchange.js";
 
 
+
+
+exchangeStatsDocComponents();
 themeChangeFooter();
 newsDocComponents();
 adCarousselDocComponent();
@@ -473,6 +477,8 @@ arrowLeft.addEventListener("click", () => {
   }
 });
 
+
+// SEC 8 Exchange stats
 // Función para desplazarse a la derecha
 arrowRight.addEventListener("click", () => {
   // Obtén el valor actual de desplazamiento
